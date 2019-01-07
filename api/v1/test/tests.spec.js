@@ -7,7 +7,7 @@ chai.should()
 
 describe('API', () => {
   describe('GET /weekly', () => {
-    it.skip('should get a JSON array', (done) => {
+    it('should get a JSON array', (done) => {
       chai.request(api)
           .get('/weekly')
           .end((err, res) => {
