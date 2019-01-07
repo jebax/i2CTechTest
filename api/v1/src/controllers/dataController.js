@@ -5,16 +5,16 @@ class DataController {
   static getWeeklyData(req, res) {
     converter()
       .fromFile(appRootPath + '/data/weekly.csv')
-      .then(jsonObj => {
-        return res.status(200).send(jsonObj)
+      .then(parsedFile => {
+        return res.status(200).send(parsedFile)
       })
   }
 
   static getTopData(req, res) {
     converter()
       .fromFile(appRootPath + '/data/top.csv')
-      .then(jsonObj => {
-        return res.status(200).send(jsonObj)
+      .then(parsedFile => {
+        return res.status(200).send(parsedFile)
       })
   }
 }
