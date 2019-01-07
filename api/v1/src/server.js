@@ -3,7 +3,7 @@ import routes from './routes/index'
 
 const api = express()
 
-const port = process.env.PORT || 4000
+const port = 4000
 
 api.use('/', routes)
 

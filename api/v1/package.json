@@ -15,7 +15,8 @@
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "mocha --require babel-register test/*.js --exit"
+    "test": "mocha --require babel-register test/*.js --exit",
+    "start": "babel-node src/server.js"
   },
   "author": "",
   "license": "ISC"
