@@ -6,10 +6,10 @@ chai.use(chaiHttp)
 chai.should()
 
 describe('API', () => {
-  describe('GET /weekly', () => {
+  describe('GET /api/v1/weekly', () => {
     it('should get a JSON array', (done) => {
       chai.request(api)
-          .get('/weekly')
+          .get('/api/v1/weekly')
           .end((err, res) => {
             res.should.have.status(200)
             res.body.should.be.a('array')
@@ -19,10 +19,10 @@ describe('API', () => {
     })
   })
 
-  describe('GET /top', () => {
+  describe('GET /api/v1/top', () => {
     it('should get a JSON array', (done) => {
       chai.request(api)
-          .get('/top')
+          .get('/api/v1/top')
           .end((err, res) => {
             res.should.have.status(200)
             res.body.should.be.a('array')
