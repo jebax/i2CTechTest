@@ -2,15 +2,18 @@
   "name": "i2c",
   "version": "1.0.0",
   "description": "This is my attempt at an i2C tech test, which uses React, Express, and Node to visualise CSV data in a dashboard format.",
-  "main": "server.js",
+  "main": "./src/server.js",
   "dependencies": {},
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
     "csvtojson": "^2.0.8",
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --require babel-register test/*.js --exit"
   },
   "author": "",
   "license": "ISC"
