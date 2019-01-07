@@ -5,11 +5,13 @@
   "main": "./src/server.js",
   "dependencies": {},
   "devDependencies": {
+    "app-root-path": "^2.1.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
     "csvtojson": "^2.0.8",
+    "express": "^4.16.4",
     "mocha": "^5.2.0"
   },
   "scripts": {
