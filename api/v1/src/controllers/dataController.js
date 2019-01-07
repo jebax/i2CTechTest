@@ -1,10 +1,18 @@
 const converter = require('csvtojson')
-const appRoutePath = require('app-root-path')
+const appRootPath = require('app-root-path')
 
 class DataController {
   static getWeeklyData(req, res) {
     converter()
-      .fromFile(appRoutePath + '/data/weekly.csv')
+      .fromFile(appRootPath + '/data/weekly.csv')
+      .then(jsonObj => {
+        return res.status(200).send(jsonObj)
+      })
+  }
+
+  static getTopData(req, res) {
+    converter()
+      .fromFile(appRootPath + '/data/top.csv')
       .then(jsonObj => {
         return res.status(200).send(jsonObj)
       })
