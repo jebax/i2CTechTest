@@ -1,5 +1,5 @@
-const converter = require('csvtojson')
-const appRootPath = require('app-root-path')
+import converter from 'csvtojson'
+import appRootPath from 'app-root-path'
 
 class DataController {
   static getWeeklyData(req, res) {
