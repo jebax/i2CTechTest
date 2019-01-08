@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Weekly data charts render correctly 1`] = `
+exports[`Weekly charts wrapper renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <WeeklyCharts />,
@@ -17,14 +17,38 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <AisleChart />,
+      "children": <AisleChart
+        data={
+          Array [
+            Object {
+              "x": 2018-01-01T00:00:00.000Z,
+              "y": "222",
+            },
+            Object {
+              "x": 2018-01-01T00:00:00.000Z,
+              "y": "111",
+            },
+          ]
+        }
+      />,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
-      "props": Object {},
+      "props": Object {
+        "data": Array [
+          Object {
+            "x": 2018-01-01T00:00:00.000Z,
+            "y": "222",
+          },
+          Object {
+            "x": 2018-01-01T00:00:00.000Z,
+            "y": "111",
+          },
+        ],
+      },
       "ref": null,
       "rendered": null,
       "type": [Function],
@@ -37,14 +61,38 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <AisleChart />,
+        "children": <AisleChart
+          data={
+            Array [
+              Object {
+                "x": 2018-01-01T00:00:00.000Z,
+                "y": "222",
+              },
+              Object {
+                "x": 2018-01-01T00:00:00.000Z,
+                "y": "111",
+              },
+            ]
+          }
+        />,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "data": Array [
+            Object {
+              "x": 2018-01-01T00:00:00.000Z,
+              "y": "222",
+            },
+            Object {
+              "x": 2018-01-01T00:00:00.000Z,
+              "y": "111",
+            },
+          ],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
