@@ -16,6 +16,10 @@ describe('Weekly data charts', () => {
     expect(weeklyCharts).toMatchSnapshot()
   })
 
+  it('include the AisleChart', () => {
+    expect(weeklyCharts.find('AisleChart').length).toEqual(1)
+  })
+
   it('make the correct API request', () => {
     expect(axios.get).toHaveBeenCalledTimes(1)
     expect(axios.get).toHaveBeenCalledWith(process.env.REACT_APP_WEEKLY_URL)

@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import '../../node_modules/react-vis/dist/style.css'
+import AisleChart from './AisleChart'
 
 export default class WeeklyCharts extends Component {
   componentDidMount() {
@@ -8,7 +10,9 @@ export default class WeeklyCharts extends Component {
 
   render() {
     return(
-      <div></div>
+      <div>
+        <AisleChart />
+      </div>
     )
   }
 }
