@@ -5,7 +5,8 @@ import AisleChart from './AisleChart'
 
 export default class WeeklyCharts extends Component {
   state = {
-    aisleData: []
+    aisleExposed: [],
+    aisleControl: []
   }
 
   componentDidMount() {
@@ -15,25 +16,29 @@ export default class WeeklyCharts extends Component {
   }
 
   formatData = data => {
-    let aisleData = []
+    let aisleExposed = []
+    let aisleControl = []
 
     data.forEach(entry => {
       if (entry.PRODUCT === 'Aisle') {
-        this.appendFormattedData(aisleData, entry)
+        this.appendFormattedData(aisleExposed, aisleControl, entry)
       }
     })
 
     this.setState(prevState => ({
-      aisleData: aisleData
+      aisleExposed: aisleExposed,
+      aisleControl: aisleControl
     }))
   }
 
-  appendFormattedData = (dataCollection, entry) => {
-    dataCollection.push(
+  appendFormattedData = (exposedCollection, controlCollection, entry) => {
+    exposedCollection.push(
       {
         x: new Date(entry.WEEK_COMMENCING),
         y: entry.EXPOSED
-      },
+      }
+    )
+    controlCollection.push(
       {
         x: new Date(entry.WEEK_COMMENCING),
         y: entry.CONTROL
@@ -45,7 +50,8 @@ export default class WeeklyCharts extends Component {
     return(
       <div>
         <AisleChart
-          data={this.state.aisleData}
+          exposed={this.state.aisleExposed}
+          control={this.state.aisleControl}
         />
       </div>
     )

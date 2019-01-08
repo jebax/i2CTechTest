@@ -18,15 +18,19 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <AisleChart
-        data={
+        control={
+          Array [
+            Object {
+              "x": 2018-01-01T00:00:00.000Z,
+              "y": "111",
+            },
+          ]
+        }
+        exposed={
           Array [
             Object {
               "x": 2018-01-01T00:00:00.000Z,
               "y": "222",
-            },
-            Object {
-              "x": 2018-01-01T00:00:00.000Z,
-              "y": "111",
             },
           ]
         }
@@ -38,14 +42,16 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "data": Array [
-          Object {
-            "x": 2018-01-01T00:00:00.000Z,
-            "y": "222",
-          },
+        "control": Array [
           Object {
             "x": 2018-01-01T00:00:00.000Z,
             "y": "111",
+          },
+        ],
+        "exposed": Array [
+          Object {
+            "x": 2018-01-01T00:00:00.000Z,
+            "y": "222",
           },
         ],
       },
@@ -62,15 +68,19 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <AisleChart
-          data={
+          control={
+            Array [
+              Object {
+                "x": 2018-01-01T00:00:00.000Z,
+                "y": "111",
+              },
+            ]
+          }
+          exposed={
             Array [
               Object {
                 "x": 2018-01-01T00:00:00.000Z,
                 "y": "222",
-              },
-              Object {
-                "x": 2018-01-01T00:00:00.000Z,
-                "y": "111",
               },
             ]
           }
@@ -82,14 +92,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "data": Array [
-            Object {
-              "x": 2018-01-01T00:00:00.000Z,
-              "y": "222",
-            },
+          "control": Array [
             Object {
               "x": 2018-01-01T00:00:00.000Z,
               "y": "111",
+            },
+          ],
+          "exposed": Array [
+            Object {
+              "x": 2018-01-01T00:00:00.000Z,
+              "y": "222",
             },
           ],
         },

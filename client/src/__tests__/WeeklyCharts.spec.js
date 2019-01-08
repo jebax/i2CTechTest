@@ -52,17 +52,10 @@ describe('Weekly charts wrapper', () => {
   it('passes the correct props to the AisleChart', () => {
     const aisleChart = weeklyCharts.find('AisleChart')
 
-    const mappedData = [
-      {
-        x: new Date('2018-01-01'),
-        y: '222'
-      },
-      {
-        x: new Date('2018-01-01'),
-        y: '111'
-      }
-    ]
+    const exposedData = [{ x: new Date('2018-01-01'), y: '222' }]
+    const controlData = [{ x: new Date('2018-01-01'), y: '111' }]
 
-    expect(aisleChart.props().data).toEqual(mappedData)
+    expect(aisleChart.props().exposed).toEqual(exposedData)
+    expect(aisleChart.props().control).toEqual(controlData)
   })
 })
