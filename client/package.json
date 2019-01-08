@@ -27,6 +27,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@material-ui/core": "^3.8.2",
     "axios": "^0.18.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
