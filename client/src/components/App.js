@@ -1,4 +1,5 @@
 import React from 'react'
+import Dashboard from './Dashboard'
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       >
         i2C Dashboard
       </header>
+      <Dashboard />
     </div>
   )
 }
