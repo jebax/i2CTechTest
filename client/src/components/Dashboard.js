@@ -1,12 +1,12 @@
 import React from 'react'
-import WeeklyChart from './WeeklyChart'
+import WeeklyCharts from './WeeklyCharts'
 
 const Dashboard = () => {
   return(
     <div
       className='dashboard'
     >
-      <WeeklyChart />
+      <WeeklyCharts />
     </div>
   )
 }

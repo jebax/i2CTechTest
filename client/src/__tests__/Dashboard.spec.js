@@ -14,6 +14,6 @@ describe('i2C Dashboard', () => {
   })
 
   it('renders the WeeklyChart', () => {
-    expect(dashboard.find('WeeklyChart').length).toEqual(1)
+    expect(dashboard.find('WeeklyCharts').length).toEqual(1)
   })
 })
