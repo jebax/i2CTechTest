@@ -17,12 +17,144 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
+      "children": Array [
+        <HorizontalGridLines
+          attr="y"
+          direction="horizontal"
+        />,
+        <VerticalGridLines
+          attr="x"
+          direction="vertical"
+        />,
+        <XAxis
+          attr="x"
+          attrAxis="y"
+          orientation="bottom"
+        />,
+        <YAxis
+          attr="y"
+          attrAxis="x"
+          orientation="left"
+        />,
+        <LineMarkSeries
+          className=""
+          curve={null}
+          getNull={[Function]}
+          lineStyle={Object {}}
+          markStyle={Object {}}
+          opacity={1}
+          stack={false}
+          strokeStyle="solid"
+          style={Object {}}
+        />,
+        <LineMarkSeries
+          className=""
+          curve={null}
+          getNull={[Function]}
+          lineStyle={Object {}}
+          markStyle={Object {}}
+          opacity={1}
+          stack={false}
+          strokeStyle="solid"
+          style={Object {}}
+        />,
+      ],
       "className": "",
       "height": 300,
       "width": 500,
+      "xType": "time",
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "attr": "y",
+          "direction": "horizontal",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "attr": "x",
+          "direction": "vertical",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "attr": "x",
+          "attrAxis": "y",
+          "orientation": "bottom",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "attr": "y",
+          "attrAxis": "x",
+          "orientation": "left",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "",
+          "curve": null,
+          "getNull": [Function],
+          "lineStyle": Object {},
+          "markStyle": Object {},
+          "opacity": 1,
+          "stack": false,
+          "strokeStyle": "solid",
+          "style": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "",
+          "curve": null,
+          "getNull": [Function],
+          "lineStyle": Object {},
+          "markStyle": Object {},
+          "opacity": 1,
+          "stack": false,
+          "strokeStyle": "solid",
+          "style": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
@@ -31,12 +163,144 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
+        "children": Array [
+          <HorizontalGridLines
+            attr="y"
+            direction="horizontal"
+          />,
+          <VerticalGridLines
+            attr="x"
+            direction="vertical"
+          />,
+          <XAxis
+            attr="x"
+            attrAxis="y"
+            orientation="bottom"
+          />,
+          <YAxis
+            attr="y"
+            attrAxis="x"
+            orientation="left"
+          />,
+          <LineMarkSeries
+            className=""
+            curve={null}
+            getNull={[Function]}
+            lineStyle={Object {}}
+            markStyle={Object {}}
+            opacity={1}
+            stack={false}
+            strokeStyle="solid"
+            style={Object {}}
+          />,
+          <LineMarkSeries
+            className=""
+            curve={null}
+            getNull={[Function]}
+            lineStyle={Object {}}
+            markStyle={Object {}}
+            opacity={1}
+            stack={false}
+            strokeStyle="solid"
+            style={Object {}}
+          />,
+        ],
         "className": "",
         "height": 300,
         "width": 500,
+        "xType": "time",
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "attr": "y",
+            "direction": "horizontal",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "attr": "x",
+            "direction": "vertical",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "attr": "x",
+            "attrAxis": "y",
+            "orientation": "bottom",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "attr": "y",
+            "attrAxis": "x",
+            "orientation": "left",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "",
+            "curve": null,
+            "getNull": [Function],
+            "lineStyle": Object {},
+            "markStyle": Object {},
+            "opacity": 1,
+            "stack": false,
+            "strokeStyle": "solid",
+            "style": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "",
+            "curve": null,
+            "getNull": [Function],
+            "lineStyle": Object {},
+            "markStyle": Object {},
+            "opacity": 1,
+            "stack": false,
+            "strokeStyle": "solid",
+            "style": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
   ],
