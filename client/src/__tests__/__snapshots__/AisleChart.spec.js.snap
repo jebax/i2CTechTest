@@ -3,7 +3,24 @@
 exports[`Aisle data chart renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <AisleChart />,
+  Symbol(enzyme.__unrendered__): <AisleChart
+    control={
+      Array [
+        Object {
+          "x": 2018-01-01T00:00:00.000Z,
+          "y": "111",
+        },
+      ]
+    }
+    exposed={
+      Array [
+        Object {
+          "x": 2018-01-01T00:00:00.000Z,
+          "y": "222",
+        },
+      ]
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -37,8 +54,16 @@ ShallowWrapper {
           orientation="left"
         />,
         <LineMarkSeries
-          className=""
-          curve={null}
+          className="aisleExposedData"
+          curve="curveMonotoneX"
+          data={
+            Array [
+              Object {
+                "x": 2018-01-01T00:00:00.000Z,
+                "y": "222",
+              },
+            ]
+          }
           getNull={[Function]}
           lineStyle={Object {}}
           markStyle={Object {}}
@@ -48,8 +73,16 @@ ShallowWrapper {
           style={Object {}}
         />,
         <LineMarkSeries
-          className=""
-          curve={null}
+          className="aisleControlData"
+          curve="curveMonotoneX"
+          data={
+            Array [
+              Object {
+                "x": 2018-01-01T00:00:00.000Z,
+                "y": "111",
+              },
+            ]
+          }
           getNull={[Function]}
           lineStyle={Object {}}
           markStyle={Object {}}
@@ -121,8 +154,14 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "className": "",
-          "curve": null,
+          "className": "aisleExposedData",
+          "curve": "curveMonotoneX",
+          "data": Array [
+            Object {
+              "x": 2018-01-01T00:00:00.000Z,
+              "y": "222",
+            },
+          ],
           "getNull": [Function],
           "lineStyle": Object {},
           "markStyle": Object {},
@@ -140,8 +179,14 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "className": "",
-          "curve": null,
+          "className": "aisleControlData",
+          "curve": "curveMonotoneX",
+          "data": Array [
+            Object {
+              "x": 2018-01-01T00:00:00.000Z,
+              "y": "111",
+            },
+          ],
           "getNull": [Function],
           "lineStyle": Object {},
           "markStyle": Object {},
@@ -183,8 +228,16 @@ ShallowWrapper {
             orientation="left"
           />,
           <LineMarkSeries
-            className=""
-            curve={null}
+            className="aisleExposedData"
+            curve="curveMonotoneX"
+            data={
+              Array [
+                Object {
+                  "x": 2018-01-01T00:00:00.000Z,
+                  "y": "222",
+                },
+              ]
+            }
             getNull={[Function]}
             lineStyle={Object {}}
             markStyle={Object {}}
@@ -194,8 +247,16 @@ ShallowWrapper {
             style={Object {}}
           />,
           <LineMarkSeries
-            className=""
-            curve={null}
+            className="aisleControlData"
+            curve="curveMonotoneX"
+            data={
+              Array [
+                Object {
+                  "x": 2018-01-01T00:00:00.000Z,
+                  "y": "111",
+                },
+              ]
+            }
             getNull={[Function]}
             lineStyle={Object {}}
             markStyle={Object {}}
@@ -267,8 +328,14 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "className": "",
-            "curve": null,
+            "className": "aisleExposedData",
+            "curve": "curveMonotoneX",
+            "data": Array [
+              Object {
+                "x": 2018-01-01T00:00:00.000Z,
+                "y": "222",
+              },
+            ],
             "getNull": [Function],
             "lineStyle": Object {},
             "markStyle": Object {},
@@ -286,8 +353,14 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "className": "",
-            "curve": null,
+            "className": "aisleControlData",
+            "curve": "curveMonotoneX",
+            "data": Array [
+              Object {
+                "x": 2018-01-01T00:00:00.000Z,
+                "y": "111",
+              },
+            ],
             "getNull": [Function],
             "lineStyle": Object {},
             "markStyle": Object {},
