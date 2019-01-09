@@ -15,7 +15,7 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
       "children": <TopLineChart
         spendData={
@@ -51,7 +51,8 @@ ShallowWrapper {
           ]
         }
       />,
-      "className": "topDataWrapper",
+      "elevation": 3,
+      "id": "topLineChart",
     },
     "ref": null,
     "rendered": Object {
@@ -88,13 +89,13 @@ ShallowWrapper {
       "rendered": null,
       "type": [Function],
     },
-    "type": "div",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": <TopLineChart
           spendData={
@@ -130,7 +131,8 @@ ShallowWrapper {
             ]
           }
         />,
-        "className": "topDataWrapper",
+        "elevation": 3,
+        "id": "topLineChart",
       },
       "ref": null,
       "rendered": Object {
@@ -167,7 +169,7 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

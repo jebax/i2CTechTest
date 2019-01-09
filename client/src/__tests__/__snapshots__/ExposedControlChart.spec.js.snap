@@ -32,14 +32,14 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
       "children": <XYPlot
         className=""
         height={300}
         margin={
           Object {
-            "left": 50,
+            "left": 60,
           }
         }
         width={350}
@@ -104,7 +104,8 @@ ShallowWrapper {
           style={Object {}}
         />
       </XYPlot>,
-      "className": "exposedControlChart",
+      "data-id": "exposedControlChart",
+      "elevation": 3,
     },
     "ref": null,
     "rendered": Object {
@@ -175,7 +176,7 @@ ShallowWrapper {
         "className": "",
         "height": 300,
         "margin": Object {
-          "left": 50,
+          "left": 60,
         },
         "width": 350,
         "xType": "time",
@@ -287,20 +288,20 @@ ShallowWrapper {
       ],
       "type": [Function],
     },
-    "type": "figure",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": <XYPlot
           className=""
           height={300}
           margin={
             Object {
-              "left": 50,
+              "left": 60,
             }
           }
           width={350}
@@ -365,7 +366,8 @@ ShallowWrapper {
             style={Object {}}
           />
         </XYPlot>,
-        "className": "exposedControlChart",
+        "data-id": "exposedControlChart",
+        "elevation": 3,
       },
       "ref": null,
       "rendered": Object {
@@ -436,7 +438,7 @@ ShallowWrapper {
           "className": "",
           "height": 300,
           "margin": Object {
-            "left": 50,
+            "left": 60,
           },
           "width": 350,
           "xType": "time",
@@ -548,7 +550,7 @@ ShallowWrapper {
         ],
         "type": [Function],
       },
-      "type": "figure",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

@@ -4,10 +4,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.weeklyChartsWrapper {
-  display: inline-block;
+div[data-id='exposedControlChart'] {
+  padding-right: 10%;
+  width: 330px;
+  height: 350px;
+  margin: 3%;
+  padding-left: 5%;
+  padding-top: 3%;
 }
 
-.exposedControlChart {
-  float: left;
+div#topLineChart {
+  width: 650px;
+  padding: 3% 0% 3% 0%;
 }

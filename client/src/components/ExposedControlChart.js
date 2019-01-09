@@ -8,11 +8,13 @@ import {
   HorizontalGridLines,
   LineMarkSeries
 } from 'react-vis'
+import Paper from '@material-ui/core/Paper'
 
 const ExposedControlChart = ({ exposed, control }) => {
   return (
-    <figure
-      className='exposedControlChart'
+    <Paper
+      elevation={3}
+      data-id='exposedControlChart'
     >
       <XYPlot
         height={300}
@@ -40,7 +42,7 @@ const ExposedControlChart = ({ exposed, control }) => {
           data={control}
         />
       </XYPlot>
-    </figure>
+    </Paper>
   )
 }
 

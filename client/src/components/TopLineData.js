@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import TopLineChart from './TopLineChart'
+import Paper from '@material-ui/core/Paper'
 
 export default class TopLineData extends Component {
   state = {
@@ -51,16 +52,14 @@ export default class TopLineData extends Component {
 
   render() {
     return(
-      <div
-        className='topDataWrapper'
-      >
+      <Paper elevation={3} id='topLineChart'>
         <TopLineChart
           spendData={this.state.spendData}
           unitsData={this.state.unitsData}
           visitsData={this.state.visitsData}
           totalCustsData={this.state.totalCustsData}
         />
-      </div>
+      </Paper>
     )
   }
 }
