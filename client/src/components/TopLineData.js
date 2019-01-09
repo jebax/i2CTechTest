@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import TopLineChart from './TopLineChart'
 
 export default class TopLineData extends Component {
   componentDidMount() {
@@ -13,6 +14,7 @@ export default class TopLineData extends Component {
       <div
         className='topDataWrapper'
       >
+        <TopLineChart />
       </div>
     )
   }

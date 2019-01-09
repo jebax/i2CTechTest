@@ -14,7 +14,7 @@ describe('Top line data', () => {
 
     }
     axios.get.mockResolvedValue(fetchedData)
-    
+
     topLineData = shallow(<TopLineData />)
   })
 
@@ -25,5 +25,9 @@ describe('Top line data', () => {
   it('makes the correct API request', () => {
     expect(axios.get).toHaveBeenCalledTimes(1)
     expect(axios.get).toHaveBeenCalledWith(process.env.REACT_APP_TOP_URL)
+  })
+
+  it('renders the TopLineChart', () => {
+    expect(topLineData.find('TopLineChart').length).toEqual(1)
   })
 })
