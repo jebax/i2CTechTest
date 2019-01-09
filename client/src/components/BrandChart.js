@@ -15,6 +15,10 @@ const BrandChart = ({ exposed, control }) => {
       height={300}
       width={500}
       xType={'time'}
+      margin={{
+        left: 100,
+        right: 100
+      }}
     >
       <HorizontalGridLines />
       <VerticalGridLines />
