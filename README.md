@@ -1,40 +1,20 @@
-# i2C
+# i2C tech test
 
-As part of the recruitment process we require the following task to be completed.
+This is my attempt at an i2C tech test, which uses React, Express, and Node to visualise CSV data in a dashboard format.
 
-# Task
-- Create a simple dashboard to present the data within a structure that will be legible and easily digested by end-users.
-- This can include as many charts as you feel is required, plus consideration towards chart type.
-- It may also include text describing the charts but please do not analyse the data, simply use Lorem Ipsum as representation.
-- Style the dashboard as you see fit. However, please bear in mind that we utilise [MaterialUI] in one of our projects.
-- We would like to see the front end fetching the data via an API.
+## My approach
 
-### Tech
-While we want you to implement your own ideas and creativity to this task we do have a few restrictions due to our current stack:
+The DataController in the Node API backend parses the CSV data (using [csvtojson](https://www.npmjs.com/package/csvtojson)) for the weekly and top line data files (located in /api/v1/data), via the getWeeklyData and getTopData static methods. The parsed data is served by Express as two separate endpoints, and sent as JSON in response to GET requests for universal compatibility. The React frontend fetches the JSON using [axios](https://www.npmjs.com/package/axios), then displays the data using [react-vis](https://uber.github.io/react-vis/). MaterialUI is used for styling the frontend.
 
-- [ReactJS]
-- [node.js]
-- [express]
-- [Mariadb] - MySql is fine also
+I used Mocha/Chai for backend testing, and Jest/Enzyme for frontend testing. I adopted a TDD approach for this project.
 
-So, please no Angular, NoSQL, etc. And definitely no jQuery for the ui/ux
+## Installation
 
-### Data
-You will find the following files:
-```
-+-- data\
-|   +-- weekly.csv - difference between exposed/control results per week per product.
-|   +-- top.csv - top line values for each metric, value uplift and % uplift
-```
+First, clone the repository.
 
-Typically, weekly data is presented using a line chart with the top-line values being displayed in either a bar chart or table format.
+To run the backend API:
 
-### Questions
-Should you have any questions, please feel free to reach out via email.
-
-[node.js]: <http://nodejs.org>
-[express]: <http://expressjs.com>
-[ReactJS]: <https://reactjs.org/>
-[Mariadb]: <https://mariadb.org/>
-[MaterialUI]: <https://www.material-ui.com/#/>
-
+- `cd api/v1`
+- `npm install` to install dependencies
+- `npm test` to run tests
+- `npm start` to serve the API on port 4000

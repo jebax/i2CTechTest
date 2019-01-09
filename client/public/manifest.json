@@ -1,0 +1,8 @@
+{
+  "short_name": "i2C Dashboard",
+  "name": "i2C Data Visualisation Dashboard",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
