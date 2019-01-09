@@ -69,11 +69,76 @@ ShallowWrapper {
           attr="y"
           direction="horizontal"
         />,
+        <ChartLabel
+          className="top-axis-label"
+          includeMargin={false}
+          style={
+            Object {
+              "textAnchor": "end",
+              "transform": "rotate(-90)",
+            }
+          }
+          text="Uplift (%)"
+          xPercent={0.06}
+          yPercent={0.06}
+        />,
+        <VerticalBarSeries
+          className=""
+          data={
+            Array [
+              Object {
+                "x": "Aisle",
+                "y": "0.01",
+              },
+            ]
+          }
+          stack={false}
+          style={Object {}}
+        />,
+        <VerticalBarSeries
+          className=""
+          data={
+            Array [
+              Object {
+                "x": "Aisle",
+                "y": "0.02",
+              },
+            ]
+          }
+          stack={false}
+          style={Object {}}
+        />,
+        <VerticalBarSeries
+          className=""
+          data={
+            Array [
+              Object {
+                "x": "Aisle",
+                "y": "0.03",
+              },
+            ]
+          }
+          stack={false}
+          style={Object {}}
+        />,
+        <VerticalBarSeries
+          className=""
+          data={
+            Array [
+              Object {
+                "x": "Aisle",
+                "y": "0.04",
+              },
+            ]
+          }
+          stack={false}
+          style={Object {}}
+        />,
       ],
       "className": "",
       "height": 300,
       "width": 600,
-      "xType": "time",
+      "xType": "ordinal",
     },
     "ref": null,
     "rendered": Array [
@@ -127,6 +192,101 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "top-axis-label",
+          "includeMargin": false,
+          "style": Object {
+            "textAnchor": "end",
+            "transform": "rotate(-90)",
+          },
+          "text": "Uplift (%)",
+          "xPercent": 0.06,
+          "yPercent": 0.06,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "",
+          "data": Array [
+            Object {
+              "x": "Aisle",
+              "y": "0.01",
+            },
+          ],
+          "stack": false,
+          "style": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "",
+          "data": Array [
+            Object {
+              "x": "Aisle",
+              "y": "0.02",
+            },
+          ],
+          "stack": false,
+          "style": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "",
+          "data": Array [
+            Object {
+              "x": "Aisle",
+              "y": "0.03",
+            },
+          ],
+          "stack": false,
+          "style": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "className": "",
+          "data": Array [
+            Object {
+              "x": "Aisle",
+              "y": "0.04",
+            },
+          ],
+          "stack": false,
+          "style": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": [Function],
   },
@@ -155,11 +315,76 @@ ShallowWrapper {
             attr="y"
             direction="horizontal"
           />,
+          <ChartLabel
+            className="top-axis-label"
+            includeMargin={false}
+            style={
+              Object {
+                "textAnchor": "end",
+                "transform": "rotate(-90)",
+              }
+            }
+            text="Uplift (%)"
+            xPercent={0.06}
+            yPercent={0.06}
+          />,
+          <VerticalBarSeries
+            className=""
+            data={
+              Array [
+                Object {
+                  "x": "Aisle",
+                  "y": "0.01",
+                },
+              ]
+            }
+            stack={false}
+            style={Object {}}
+          />,
+          <VerticalBarSeries
+            className=""
+            data={
+              Array [
+                Object {
+                  "x": "Aisle",
+                  "y": "0.02",
+                },
+              ]
+            }
+            stack={false}
+            style={Object {}}
+          />,
+          <VerticalBarSeries
+            className=""
+            data={
+              Array [
+                Object {
+                  "x": "Aisle",
+                  "y": "0.03",
+                },
+              ]
+            }
+            stack={false}
+            style={Object {}}
+          />,
+          <VerticalBarSeries
+            className=""
+            data={
+              Array [
+                Object {
+                  "x": "Aisle",
+                  "y": "0.04",
+                },
+              ]
+            }
+            stack={false}
+            style={Object {}}
+          />,
         ],
         "className": "",
         "height": 300,
         "width": 600,
-        "xType": "time",
+        "xType": "ordinal",
       },
       "ref": null,
       "rendered": Array [
@@ -208,6 +433,101 @@ ShallowWrapper {
           "props": Object {
             "attr": "y",
             "direction": "horizontal",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "top-axis-label",
+            "includeMargin": false,
+            "style": Object {
+              "textAnchor": "end",
+              "transform": "rotate(-90)",
+            },
+            "text": "Uplift (%)",
+            "xPercent": 0.06,
+            "yPercent": 0.06,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "",
+            "data": Array [
+              Object {
+                "x": "Aisle",
+                "y": "0.01",
+              },
+            ],
+            "stack": false,
+            "style": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "",
+            "data": Array [
+              Object {
+                "x": "Aisle",
+                "y": "0.02",
+              },
+            ],
+            "stack": false,
+            "style": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "",
+            "data": Array [
+              Object {
+                "x": "Aisle",
+                "y": "0.03",
+              },
+            ],
+            "stack": false,
+            "style": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "className": "",
+            "data": Array [
+              Object {
+                "x": "Aisle",
+                "y": "0.04",
+              },
+            ],
+            "stack": false,
+            "style": Object {},
           },
           "ref": null,
           "rendered": null,

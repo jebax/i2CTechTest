@@ -5,7 +5,9 @@ import {
   XAxis,
   YAxis,
   VerticalGridLines,
-  HorizontalGridLines
+  HorizontalGridLines,
+  VerticalBarSeries,
+  ChartLabel
 } from 'react-vis'
 
 const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
@@ -13,12 +15,35 @@ const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
     <XYPlot
       height={300}
       width={600}
-      xType={'time'}
+      xType={'ordinal'}
     >
-    <XAxis />
-    <YAxis />
-    <VerticalGridLines />
-    <HorizontalGridLines />
+      <XAxis />
+      <YAxis />
+      <VerticalGridLines />
+      <HorizontalGridLines />
+      <ChartLabel
+        text="Uplift (%)"
+        className="top-axis-label"
+        includeMargin={false}
+        xPercent={0.06}
+        yPercent={0.06}
+        style={{
+          transform: 'rotate(-90)',
+          textAnchor: 'end'
+        }}
+      />
+      <VerticalBarSeries
+        data={spendData}
+      />
+      <VerticalBarSeries
+        data={unitsData}
+      />
+      <VerticalBarSeries
+        data={visitsData}
+      />
+      <VerticalBarSeries
+        data={totalCustsData}
+      />
     </XYPlot>
   )
 }
