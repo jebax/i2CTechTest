@@ -1,5 +1,6 @@
 import React from 'react'
 import WeeklyCharts from './WeeklyCharts'
+import TopLineData from './TopLineData'
 
 const Dashboard = () => {
   return(
@@ -7,6 +8,7 @@ const Dashboard = () => {
       className='dashboard'
     >
       <WeeklyCharts />
+      <TopLineData />
     </div>
   )
 }
