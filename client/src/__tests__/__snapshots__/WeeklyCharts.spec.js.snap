@@ -18,7 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <AisleChart
+        <ExposedControlChart
           control={
             Array [
               Object {
@@ -36,7 +36,7 @@ ShallowWrapper {
             ]
           }
         />,
-        <BrandChart
+        <ExposedControlChart
           control={
             Array [
               Object {
@@ -54,7 +54,7 @@ ShallowWrapper {
             ]
           }
         />,
-        <OfferChart
+        <ExposedControlChart
           control={
             Array [
               Object {
@@ -152,7 +152,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <AisleChart
+          <ExposedControlChart
             control={
               Array [
                 Object {
@@ -170,7 +170,7 @@ ShallowWrapper {
               ]
             }
           />,
-          <BrandChart
+          <ExposedControlChart
             control={
               Array [
                 Object {
@@ -188,7 +188,7 @@ ShallowWrapper {
               ]
             }
           />,
-          <OfferChart
+          <ExposedControlChart
             control={
               Array [
                 Object {

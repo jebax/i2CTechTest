@@ -45,12 +45,12 @@ describe('Weekly charts wrapper', () => {
     expect(axios.get).toHaveBeenCalledWith(process.env.REACT_APP_WEEKLY_URL)
   })
 
-  it('includes the AisleChart', () => {
-    expect(weeklyCharts.find('AisleChart').length).toEqual(1)
+  it('includes three ExposedControlCharts', () => {
+    expect(weeklyCharts.find('ExposedControlChart').length).toEqual(3)
   })
 
-  it('passes the correct props to the AisleChart', () => {
-    const aisleChart = weeklyCharts.find('AisleChart')
+  it('passes the aisle data to the first ExposedControlChart', () => {
+    const aisleChart = weeklyCharts.find('ExposedControlChart').first()
 
     const exposedData = [{ x: new Date('2018-01-01'), y: '222' }]
     const controlData = [{ x: new Date('2018-01-01'), y: '111' }]
@@ -59,12 +59,8 @@ describe('Weekly charts wrapper', () => {
     expect(aisleChart.props().control).toEqual(controlData)
   })
 
-  it('includes the BrandChart', () => {
-    expect(weeklyCharts.find('BrandChart').length).toEqual(1)
-  })
-
-  it('passes the correct props to the BrandChart', () => {
-    const brandChart = weeklyCharts.find('BrandChart')
+  it('passes the brand data to the second ExposedControlChart', () => {
+    const brandChart = weeklyCharts.find('ExposedControlChart').at(1)
 
     const exposedData = [{ x: new Date('2018-01-01'), y: '444' }]
     const controlData = [{ x: new Date('2018-01-01'), y: '333' }]
@@ -73,12 +69,8 @@ describe('Weekly charts wrapper', () => {
     expect(brandChart.props().control).toEqual(controlData)
   })
 
-  it('includes the OfferChart', () => {
-    expect(weeklyCharts.find('OfferChart').length).toEqual(1)
-  })
-
-  it('passes the correct props to the OfferChart', () => {
-    const offerChart = weeklyCharts.find('OfferChart')
+  it('passes the offer data to the third ExposedControlChart', () => {
+    const offerChart = weeklyCharts.find('ExposedControlChart').at(2)
 
     const exposedData = [{ x: new Date('2018-01-01'), y: '666' }]
     const controlData = [{ x: new Date('2018-01-01'), y: '555' }]

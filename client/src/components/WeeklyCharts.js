@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import '../../node_modules/react-vis/dist/style.css'
-import AisleChart from './AisleChart'
-import BrandChart from './BrandChart'
-import OfferChart from './OfferChart'
+import ExposedControlChart from './ExposedControlChart'
 
 export default class WeeklyCharts extends Component {
   state = {
@@ -69,15 +67,15 @@ export default class WeeklyCharts extends Component {
   render() {
     return(
       <div>
-        <AisleChart
+        <ExposedControlChart
           exposed={this.state.aisleExposed}
           control={this.state.aisleControl}
         />
-        <BrandChart
+        <ExposedControlChart
           exposed={this.state.brandExposed}
           control={this.state.brandControl}
         />
-        <OfferChart
+        <ExposedControlChart
           exposed={this.state.offerExposed}
           control={this.state.offerControl}
         />
