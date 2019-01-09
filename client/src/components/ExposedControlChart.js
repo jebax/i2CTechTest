@@ -6,24 +6,36 @@ import {
   YAxis,
   VerticalGridLines,
   HorizontalGridLines,
+  ChartLabel,
   LineMarkSeries
 } from 'react-vis'
 
 const ExposedControlChart = ({ exposed, control }) => {
   return (
+    <figure
+      className='exposedControlChart'
+    >
     <XYPlot
       height={300}
-      width={500}
+      width={350}
       xType={'time'}
       margin={{
-        left: 100,
-        right: 100
+        left: 50
       }}
     >
       <HorizontalGridLines />
       <VerticalGridLines />
-      <XAxis />
-      <YAxis />
+      <XAxis
+        tickLabelAngle={-30}/>
+      <YAxis
+        tickLabelAngle={-30}
+      />
+      <ChartLabel
+        text="Week Commencing"
+        includeMargin={false}
+        xPercent={0.025}
+        yPercent={1.01}
+      />
       <LineMarkSeries
         className={'exposedData'}
         curve={'curveMonotoneX'}
@@ -35,6 +47,7 @@ const ExposedControlChart = ({ exposed, control }) => {
         data={control}
       />
     </XYPlot>
+    </figure>
   )
 }
 
