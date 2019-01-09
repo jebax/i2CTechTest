@@ -30,18 +30,12 @@ export default class WeeklyCharts extends Component {
     let offerControl = []
 
     data.forEach(entry => {
-      switch (entry.PRODUCT) {
-        case 'Aisle':
-          this.appendFormattedData(aisleExposed, aisleControl, entry)
-          break
-        case 'Brand':
-          this.appendFormattedData(brandExposed, brandControl, entry)
-          break
-        case 'Offer':
-          this.appendFormattedData(offerExposed, offerControl, entry)
-          break
-        default:
-          break
+      if (entry.PRODUCT === 'Aisle') {
+        this.appendFormattedData(aisleExposed, aisleControl, entry)
+      } else if (entry.PRODUCT === 'Brand') {
+        this.appendFormattedData(brandExposed, brandControl, entry)
+      } else {
+        this.appendFormattedData(offerExposed, offerControl, entry)
       }
     })
 

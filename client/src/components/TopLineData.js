@@ -23,21 +23,14 @@ export default class TopLineData extends Component {
     let totalCustsData = []
 
     data.forEach(entry => {
-      switch (entry.METRIC) {
-        case 'Spend':
-          this.appendFormattedData(spendData, entry)
-          break
-        case 'Units':
-          this.appendFormattedData(unitsData, entry)
-          break
-        case 'Visits':
-          this.appendFormattedData(visitsData, entry)
-          break
-        case 'Total_custs':
-          this.appendFormattedData(totalCustsData, entry)
-          break
-        default:
-          break
+      if (entry.METRIC === 'Spend') {
+        this.appendFormattedData(spendData, entry)
+      } else if (entry.METRIC === 'Units') {
+        this.appendFormattedData(unitsData, entry)
+      } else if (entry.METRIC === 'Visits') {
+        this.appendFormattedData(visitsData, entry)
+      } else {
+        this.appendFormattedData(totalCustsData, entry)
       }
     })
 
