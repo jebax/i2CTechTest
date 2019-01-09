@@ -3,7 +3,40 @@
 exports[`Top line chart renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <TopLineChart />,
+  Symbol(enzyme.__unrendered__): <TopLineChart
+    spendData={
+      Array [
+        Object {
+          "x": "Aisle",
+          "y": "0.01",
+        },
+      ]
+    }
+    totalCustsData={
+      Array [
+        Object {
+          "x": "Aisle",
+          "y": "0.04",
+        },
+      ]
+    }
+    unitsData={
+      Array [
+        Object {
+          "x": "Aisle",
+          "y": "0.02",
+        },
+      ]
+    }
+    visitsData={
+      Array [
+        Object {
+          "x": "Aisle",
+          "y": "0.03",
+        },
+      ]
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -40,6 +73,7 @@ ShallowWrapper {
       "className": "",
       "height": 300,
       "width": 600,
+      "xType": "time",
     },
     "ref": null,
     "rendered": Array [
@@ -125,6 +159,7 @@ ShallowWrapper {
         "className": "",
         "height": 300,
         "width": 600,
+        "xType": "time",
       },
       "ref": null,
       "rendered": Array [
