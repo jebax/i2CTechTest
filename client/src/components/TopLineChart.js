@@ -16,20 +16,24 @@ const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
       height={300}
       width={600}
       xType={'ordinal'}
+      margin={{
+        left: 100
+      }}
     >
       <XAxis />
-      <YAxis />
+      <YAxis
+        tickLabelAngle={-30}
+      />
       <VerticalGridLines />
       <HorizontalGridLines />
       <ChartLabel
         text="Uplift (%)"
-        className="top-axis-label"
+        className="top-chart-label"
         includeMargin={false}
-        xPercent={0.06}
-        yPercent={0.06}
+        xPercent={-0.1}
+        yPercent={0.6}
         style={{
           transform: 'rotate(-90)',
-          textAnchor: 'end'
         }}
       />
       <VerticalBarSeries

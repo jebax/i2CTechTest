@@ -19,7 +19,7 @@ const ExposedControlChart = ({ exposed, control }) => {
         width={350}
         xType={'time'}
         margin={{
-          left: 50
+          left: 60
         }}
       >
         <HorizontalGridLines />
