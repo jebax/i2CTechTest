@@ -11,30 +11,36 @@ import {
 
 const ExposedControlChart = ({ exposed, control }) => {
   return (
-    <XYPlot
-      height={300}
-      width={500}
-      xType={'time'}
-      margin={{
-        left: 100,
-        right: 100
-      }}
+    <figure
+      className='exposedControlChart'
     >
-      <HorizontalGridLines />
-      <VerticalGridLines />
-      <XAxis />
-      <YAxis />
-      <LineMarkSeries
-        className={'exposedData'}
-        curve={'curveMonotoneX'}
-        data={exposed}
-      />
-      <LineMarkSeries
-        className={'controlData'}
-        curve={'curveMonotoneX'}
-        data={control}
-      />
-    </XYPlot>
+      <XYPlot
+        height={300}
+        width={350}
+        xType={'time'}
+        margin={{
+          left: 50
+        }}
+      >
+        <HorizontalGridLines />
+        <VerticalGridLines />
+        <XAxis
+          tickLabelAngle={-30}/>
+        <YAxis
+          tickLabelAngle={-30}
+        />
+        <LineMarkSeries
+          className={'exposedData'}
+          curve={'curveMonotoneX'}
+          data={exposed}
+        />
+        <LineMarkSeries
+          className={'controlData'}
+          curve={'curveMonotoneX'}
+          data={control}
+        />
+      </XYPlot>
+    </figure>
   )
 }
 

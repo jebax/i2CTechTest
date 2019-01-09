@@ -66,7 +66,9 @@ export default class WeeklyCharts extends Component {
 
   render() {
     return(
-      <div>
+      <div
+        className='weeklyChartsWrapper'
+      >
         <ExposedControlChart
           exposed={this.state.aisleExposed}
           control={this.state.aisleControl}
