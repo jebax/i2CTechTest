@@ -72,4 +72,18 @@ describe('Weekly charts wrapper', () => {
     expect(brandChart.props().exposed).toEqual(exposedData)
     expect(brandChart.props().control).toEqual(controlData)
   })
+
+  it('includes the OfferChart', () => {
+    expect(weeklyCharts.find('OfferChart').length).toEqual(1)
+  })
+
+  it('passes the correct props to the OfferChart', () => {
+    const offerChart = weeklyCharts.find('OfferChart')
+
+    const exposedData = [{ x: new Date('2018-01-01'), y: '666' }]
+    const controlData = [{ x: new Date('2018-01-01'), y: '555' }]
+
+    expect(offerChart.props().exposed).toEqual(exposedData)
+    expect(offerChart.props().control).toEqual(controlData)
+  })
 })

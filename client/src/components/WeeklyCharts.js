@@ -3,13 +3,16 @@ import axios from 'axios'
 import '../../node_modules/react-vis/dist/style.css'
 import AisleChart from './AisleChart'
 import BrandChart from './BrandChart'
+import OfferChart from './OfferChart'
 
 export default class WeeklyCharts extends Component {
   state = {
     aisleExposed: [],
     aisleControl: [],
     brandExposed: [],
-    brandControl: []
+    brandControl: [],
+    offerExposed: [],
+    offerControl: []
   }
 
   componentDidMount() {
@@ -25,11 +28,16 @@ export default class WeeklyCharts extends Component {
     let brandExposed = []
     let brandControl = []
 
+    let offerExposed = []
+    let offerControl = []
+
     data.forEach(entry => {
       if (entry.PRODUCT === 'Aisle') {
         this.appendFormattedData(aisleExposed, aisleControl, entry)
       } else if (entry.PRODUCT === 'Brand') {
         this.appendFormattedData(brandExposed, brandControl, entry)
+      } else {
+        this.appendFormattedData(offerExposed, offerControl, entry)
       }
     })
 
@@ -37,7 +45,9 @@ export default class WeeklyCharts extends Component {
       aisleExposed: aisleExposed,
       aisleControl: aisleControl,
       brandExposed: brandExposed,
-      brandControl: brandControl
+      brandControl: brandControl,
+      offerExposed: offerExposed,
+      offerControl: offerControl
     }))
   }
 
@@ -66,6 +76,10 @@ export default class WeeklyCharts extends Component {
         <BrandChart
           exposed={this.state.brandExposed}
           control={this.state.brandControl}
+        />
+        <OfferChart
+          exposed={this.state.offerExposed}
+          control={this.state.offerControl}
         />
       </div>
     )

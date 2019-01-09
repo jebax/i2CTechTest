@@ -54,6 +54,24 @@ ShallowWrapper {
             ]
           }
         />,
+        <OfferChart
+          control={
+            Array [
+              Object {
+                "x": 2018-01-01T00:00:00.000Z,
+                "y": "555",
+              },
+            ]
+          }
+          exposed={
+            Array [
+              Object {
+                "x": 2018-01-01T00:00:00.000Z,
+                "y": "666",
+              },
+            ]
+          }
+        />,
       ],
     },
     "ref": null,
@@ -95,6 +113,28 @@ ShallowWrapper {
             Object {
               "x": 2018-01-01T00:00:00.000Z,
               "y": "444",
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "control": Array [
+            Object {
+              "x": 2018-01-01T00:00:00.000Z,
+              "y": "555",
+            },
+          ],
+          "exposed": Array [
+            Object {
+              "x": 2018-01-01T00:00:00.000Z,
+              "y": "666",
             },
           ],
         },
@@ -148,6 +188,24 @@ ShallowWrapper {
               ]
             }
           />,
+          <OfferChart
+            control={
+              Array [
+                Object {
+                  "x": 2018-01-01T00:00:00.000Z,
+                  "y": "555",
+                },
+              ]
+            }
+            exposed={
+              Array [
+                Object {
+                  "x": 2018-01-01T00:00:00.000Z,
+                  "y": "666",
+                },
+              ]
+            }
+          />,
         ],
       },
       "ref": null,
@@ -189,6 +247,28 @@ ShallowWrapper {
               Object {
                 "x": 2018-01-01T00:00:00.000Z,
                 "y": "444",
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "control": Array [
+              Object {
+                "x": 2018-01-01T00:00:00.000Z,
+                "y": "555",
+              },
+            ],
+            "exposed": Array [
+              Object {
+                "x": 2018-01-01T00:00:00.000Z,
+                "y": "666",
               },
             ],
           },
