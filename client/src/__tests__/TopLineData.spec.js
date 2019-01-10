@@ -54,10 +54,10 @@ describe('Top line data', () => {
   it('renders the TopLineChart with the correct data', () => {
     const chart = topLineData.find('TopLineChart')
 
-    const spendData = [{ x: 'Aisle', y: '0.01' }]
-    const unitsData = [{ x: 'Aisle', y: '0.02' }]
-    const visitsData = [{ x: 'Aisle', y: '0.03' }]
-    const totalCustsData = [{ x: 'Aisle', y: '0.04' }]
+    const spendData = [{ x: 'Aisle', y: 1 }]
+    const unitsData = [{ x: 'Aisle', y: 2 }]
+    const visitsData = [{ x: 'Aisle', y: 3 }]
+    const totalCustsData = [{ x: 'Aisle', y: 4 }]
 
     expect(chart.props().spendData).toEqual(spendData)
     expect(chart.props().unitsData).toEqual(unitsData)

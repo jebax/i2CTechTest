@@ -45,7 +45,7 @@ export default class TopLineData extends Component {
   appendFormattedData = (dataCollection, entry) => {
     dataCollection.push({
       x: entry.PRODUCT,
-      y: entry.PCT_UPLIFT
+      y: entry.PCT_UPLIFT * 100
     })
   }
 
