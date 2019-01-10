@@ -16,32 +16,36 @@ const ExposedControlChart = ({ exposed, control }) => {
       elevation={3}
       data-id='exposedControlChart'
     >
-      <XYPlot
-        height={300}
-        width={350}
-        xType={'time'}
-        margin={{
-          left: 60
-        }}
+      <div
+        className='chartWrapper'
       >
-        <HorizontalGridLines />
-        <VerticalGridLines />
-        <XAxis
-          tickLabelAngle={-30}/>
-        <YAxis
-          tickLabelAngle={-30}
-        />
-        <LineMarkSeries
-          className={'exposedData'}
-          curve={'curveMonotoneX'}
-          data={exposed}
-        />
-        <LineMarkSeries
-          className={'controlData'}
-          curve={'curveMonotoneX'}
-          data={control}
-        />
-      </XYPlot>
+        <XYPlot
+          height={300}
+          width={350}
+          xType={'time'}
+          margin={{
+            left: 60
+          }}
+        >
+          <HorizontalGridLines />
+          <VerticalGridLines />
+          <XAxis
+            tickLabelAngle={-30}/>
+          <YAxis
+            tickLabelAngle={-30}
+          />
+          <LineMarkSeries
+            className={'exposedData'}
+            curve={'curveMonotoneX'}
+            data={exposed}
+          />
+          <LineMarkSeries
+            className={'controlData'}
+            curve={'curveMonotoneX'}
+            data={control}
+          />
+        </XYPlot>
+      </div>
     </Paper>
   )
 }

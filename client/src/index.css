@@ -4,16 +4,23 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.chartWrapper {
+  display: inline-block;
+}
+
 div[data-id='exposedControlChart'] {
   padding-right: 10%;
-  width: 330px;
+  width: 79%;
   height: 350px;
   margin: 3%;
   padding-left: 5%;
   padding-top: 3%;
+  background-color: #eeeeee;
 }
 
 div#topLineChart {
-  width: 650px;
+  width: 65%;
   padding: 3% 0% 3% 0%;
+  background-color: #eeeeee;
+  margin-left: 3%;
 }
