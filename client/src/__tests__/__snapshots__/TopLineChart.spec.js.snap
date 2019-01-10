@@ -182,7 +182,7 @@ ShallowWrapper {
           orientation="vertical"
           style={
             Object {
-              "padding-top": "19%",
+              "paddingTop": "19%",
             }
           }
         />
@@ -326,7 +326,7 @@ ShallowWrapper {
             orientation="vertical"
             style={
               Object {
-                "padding-top": "19%",
+                "paddingTop": "19%",
               }
             }
           />,
@@ -616,7 +616,7 @@ ShallowWrapper {
             ],
             "orientation": "vertical",
             "style": Object {
-              "padding-top": "19%",
+              "paddingTop": "19%",
             },
           },
           "ref": null,
@@ -766,7 +766,7 @@ ShallowWrapper {
             orientation="vertical"
             style={
               Object {
-                "padding-top": "19%",
+                "paddingTop": "19%",
               }
             }
           />
@@ -910,7 +910,7 @@ ShallowWrapper {
               orientation="vertical"
               style={
                 Object {
-                  "padding-top": "19%",
+                  "paddingTop": "19%",
                 }
               }
             />,
@@ -1200,7 +1200,7 @@ ShallowWrapper {
               ],
               "orientation": "vertical",
               "style": Object {
-                "padding-top": "19%",
+                "paddingTop": "19%",
               },
             },
             "ref": null,

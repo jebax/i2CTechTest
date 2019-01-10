@@ -80,7 +80,7 @@ const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
             }
           ]}
           style={{
-            'padding-top': '19%'
+            'paddingTop': '19%'
           }}
         />
       </div>
