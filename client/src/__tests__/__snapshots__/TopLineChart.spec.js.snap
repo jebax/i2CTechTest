@@ -50,284 +50,51 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": Array [
-        <XAxis
-          attr="x"
-          attrAxis="y"
-          orientation="bottom"
-        />,
-        <YAxis
-          attr="y"
-          attrAxis="x"
-          orientation="left"
-        />,
-        <VerticalGridLines
-          attr="x"
-          direction="vertical"
-        />,
-        <HorizontalGridLines
-          attr="y"
-          direction="horizontal"
-        />,
-        <ChartLabel
-          className="top-axis-label"
-          includeMargin={false}
-          style={
+      "children": <div
+        className="chartWrapper"
+      >
+        <XYPlot
+          className=""
+          height={300}
+          margin={
             Object {
-              "textAnchor": "end",
-              "transform": "rotate(-90)",
+              "left": 100,
             }
           }
-          text="Uplift (%)"
-          xPercent={0.06}
-          yPercent={0.06}
-        />,
-        <VerticalBarSeries
-          className=""
-          data={
-            Array [
-              Object {
-                "x": "Aisle",
-                "y": "0.01",
-              },
-            ]
-          }
-          stack={false}
-          style={Object {}}
-        />,
-        <VerticalBarSeries
-          className=""
-          data={
-            Array [
-              Object {
-                "x": "Aisle",
-                "y": "0.02",
-              },
-            ]
-          }
-          stack={false}
-          style={Object {}}
-        />,
-        <VerticalBarSeries
-          className=""
-          data={
-            Array [
-              Object {
-                "x": "Aisle",
-                "y": "0.03",
-              },
-            ]
-          }
-          stack={false}
-          style={Object {}}
-        />,
-        <VerticalBarSeries
-          className=""
-          data={
-            Array [
-              Object {
-                "x": "Aisle",
-                "y": "0.04",
-              },
-            ]
-          }
-          stack={false}
-          style={Object {}}
-        />,
-      ],
-      "className": "",
-      "height": 300,
-      "width": 600,
-      "xType": "ordinal",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "attr": "x",
-          "attrAxis": "y",
-          "orientation": "bottom",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "attr": "y",
-          "attrAxis": "x",
-          "orientation": "left",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "attr": "x",
-          "direction": "vertical",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "attr": "y",
-          "direction": "horizontal",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "className": "top-axis-label",
-          "includeMargin": false,
-          "style": Object {
-            "textAnchor": "end",
-            "transform": "rotate(-90)",
-          },
-          "text": "Uplift (%)",
-          "xPercent": 0.06,
-          "yPercent": 0.06,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "className": "",
-          "data": Array [
-            Object {
-              "x": "Aisle",
-              "y": "0.01",
-            },
-          ],
-          "stack": false,
-          "style": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "className": "",
-          "data": Array [
-            Object {
-              "x": "Aisle",
-              "y": "0.02",
-            },
-          ],
-          "stack": false,
-          "style": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "className": "",
-          "data": Array [
-            Object {
-              "x": "Aisle",
-              "y": "0.03",
-            },
-          ],
-          "stack": false,
-          "style": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "className": "",
-          "data": Array [
-            Object {
-              "x": "Aisle",
-              "y": "0.04",
-            },
-          ],
-          "stack": false,
-          "style": Object {},
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
+          width={600}
+          xType="ordinal"
+        >
           <XAxis
             attr="x"
             attrAxis="y"
             orientation="bottom"
-          />,
+          />
           <YAxis
             attr="y"
             attrAxis="x"
             orientation="left"
-          />,
+            tickLabelAngle={-30}
+          />
           <VerticalGridLines
             attr="x"
             direction="vertical"
-          />,
+          />
           <HorizontalGridLines
             attr="y"
             direction="horizontal"
-          />,
+          />
           <ChartLabel
-            className="top-axis-label"
+            className="top-chart-label"
             includeMargin={false}
             style={
               Object {
-                "textAnchor": "end",
                 "transform": "rotate(-90)",
               }
             }
             text="Uplift (%)"
-            xPercent={0.06}
-            yPercent={0.06}
-          />,
+            xPercent={-0.1}
+            yPercent={0.6}
+          />
           <VerticalBarSeries
             className=""
             data={
@@ -340,7 +107,7 @@ ShallowWrapper {
             }
             stack={false}
             style={Object {}}
-          />,
+          />
           <VerticalBarSeries
             className=""
             data={
@@ -353,7 +120,7 @@ ShallowWrapper {
             }
             stack={false}
             style={Object {}}
-          />,
+          />
           <VerticalBarSeries
             className=""
             data={
@@ -366,7 +133,7 @@ ShallowWrapper {
             }
             stack={false}
             style={Object {}}
-          />,
+          />
           <VerticalBarSeries
             className=""
             data={
@@ -379,161 +146,1070 @@ ShallowWrapper {
             }
             stack={false}
             style={Object {}}
+          />
+        </XYPlot>
+        <DiscreteColorLegendItem
+          className=""
+          colors={
+            Array [
+              "#12939A",
+              "#79C7E3",
+              "#1A3177",
+              "#FF9833",
+              "#EF5D28",
+            ]
+          }
+          items={
+            Array [
+              Object {
+                "strokeWidth": 14,
+                "title": "Spend",
+              },
+              Object {
+                "strokeWidth": 14,
+                "title": "Units",
+              },
+              Object {
+                "strokeWidth": 14,
+                "title": "Visits",
+              },
+              Object {
+                "strokeWidth": 14,
+                "title": "Total Customers",
+              },
+            ]
+          }
+          orientation="vertical"
+          style={
+            Object {
+              "padding-top": "19%",
+            }
+          }
+        />
+      </div>,
+      "elevation": 3,
+      "id": "topLineChart",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <XYPlot
+            className=""
+            height={300}
+            margin={
+              Object {
+                "left": 100,
+              }
+            }
+            width={600}
+            xType="ordinal"
+          >
+            <XAxis
+              attr="x"
+              attrAxis="y"
+              orientation="bottom"
+            />
+            <YAxis
+              attr="y"
+              attrAxis="x"
+              orientation="left"
+              tickLabelAngle={-30}
+            />
+            <VerticalGridLines
+              attr="x"
+              direction="vertical"
+            />
+            <HorizontalGridLines
+              attr="y"
+              direction="horizontal"
+            />
+            <ChartLabel
+              className="top-chart-label"
+              includeMargin={false}
+              style={
+                Object {
+                  "transform": "rotate(-90)",
+                }
+              }
+              text="Uplift (%)"
+              xPercent={-0.1}
+              yPercent={0.6}
+            />
+            <VerticalBarSeries
+              className=""
+              data={
+                Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.01",
+                  },
+                ]
+              }
+              stack={false}
+              style={Object {}}
+            />
+            <VerticalBarSeries
+              className=""
+              data={
+                Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.02",
+                  },
+                ]
+              }
+              stack={false}
+              style={Object {}}
+            />
+            <VerticalBarSeries
+              className=""
+              data={
+                Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.03",
+                  },
+                ]
+              }
+              stack={false}
+              style={Object {}}
+            />
+            <VerticalBarSeries
+              className=""
+              data={
+                Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.04",
+                  },
+                ]
+              }
+              stack={false}
+              style={Object {}}
+            />
+          </XYPlot>,
+          <DiscreteColorLegendItem
+            className=""
+            colors={
+              Array [
+                "#12939A",
+                "#79C7E3",
+                "#1A3177",
+                "#FF9833",
+                "#EF5D28",
+              ]
+            }
+            items={
+              Array [
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Spend",
+                },
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Units",
+                },
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Visits",
+                },
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Total Customers",
+                },
+              ]
+            }
+            orientation="vertical"
+            style={
+              Object {
+                "padding-top": "19%",
+              }
+            }
           />,
         ],
-        "className": "",
-        "height": 300,
-        "width": 600,
-        "xType": "ordinal",
+        "className": "chartWrapper",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "attr": "x",
-            "attrAxis": "y",
-            "orientation": "bottom",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "attr": "y",
-            "attrAxis": "x",
-            "orientation": "left",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "attr": "x",
-            "direction": "vertical",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "attr": "y",
-            "direction": "horizontal",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "className": "top-axis-label",
-            "includeMargin": false,
-            "style": Object {
-              "textAnchor": "end",
-              "transform": "rotate(-90)",
+            "children": Array [
+              <XAxis
+                attr="x"
+                attrAxis="y"
+                orientation="bottom"
+              />,
+              <YAxis
+                attr="y"
+                attrAxis="x"
+                orientation="left"
+                tickLabelAngle={-30}
+              />,
+              <VerticalGridLines
+                attr="x"
+                direction="vertical"
+              />,
+              <HorizontalGridLines
+                attr="y"
+                direction="horizontal"
+              />,
+              <ChartLabel
+                className="top-chart-label"
+                includeMargin={false}
+                style={
+                  Object {
+                    "transform": "rotate(-90)",
+                  }
+                }
+                text="Uplift (%)"
+                xPercent={-0.1}
+                yPercent={0.6}
+              />,
+              <VerticalBarSeries
+                className=""
+                data={
+                  Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.01",
+                    },
+                  ]
+                }
+                stack={false}
+                style={Object {}}
+              />,
+              <VerticalBarSeries
+                className=""
+                data={
+                  Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.02",
+                    },
+                  ]
+                }
+                stack={false}
+                style={Object {}}
+              />,
+              <VerticalBarSeries
+                className=""
+                data={
+                  Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.03",
+                    },
+                  ]
+                }
+                stack={false}
+                style={Object {}}
+              />,
+              <VerticalBarSeries
+                className=""
+                data={
+                  Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.04",
+                    },
+                  ]
+                }
+                stack={false}
+                style={Object {}}
+              />,
+            ],
+            "className": "",
+            "height": 300,
+            "margin": Object {
+              "left": 100,
             },
-            "text": "Uplift (%)",
-            "xPercent": 0.06,
-            "yPercent": 0.06,
+            "width": 600,
+            "xType": "ordinal",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "attr": "x",
+                "attrAxis": "y",
+                "orientation": "bottom",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "attr": "y",
+                "attrAxis": "x",
+                "orientation": "left",
+                "tickLabelAngle": -30,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "attr": "x",
+                "direction": "vertical",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "attr": "y",
+                "direction": "horizontal",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "top-chart-label",
+                "includeMargin": false,
+                "style": Object {
+                  "transform": "rotate(-90)",
+                },
+                "text": "Uplift (%)",
+                "xPercent": -0.1,
+                "yPercent": 0.6,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "",
+                "data": Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.01",
+                  },
+                ],
+                "stack": false,
+                "style": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "",
+                "data": Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.02",
+                  },
+                ],
+                "stack": false,
+                "style": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "",
+                "data": Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.03",
+                  },
+                ],
+                "stack": false,
+                "style": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "",
+                "data": Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.04",
+                  },
+                ],
+                "stack": false,
+                "style": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
             "className": "",
-            "data": Array [
+            "colors": Array [
+              "#12939A",
+              "#79C7E3",
+              "#1A3177",
+              "#FF9833",
+              "#EF5D28",
+            ],
+            "items": Array [
               Object {
-                "x": "Aisle",
-                "y": "0.01",
+                "strokeWidth": 14,
+                "title": "Spend",
+              },
+              Object {
+                "strokeWidth": 14,
+                "title": "Units",
+              },
+              Object {
+                "strokeWidth": 14,
+                "title": "Visits",
+              },
+              Object {
+                "strokeWidth": 14,
+                "title": "Total Customers",
               },
             ],
-            "stack": false,
-            "style": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "className": "",
-            "data": Array [
-              Object {
-                "x": "Aisle",
-                "y": "0.02",
-              },
-            ],
-            "stack": false,
-            "style": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "className": "",
-            "data": Array [
-              Object {
-                "x": "Aisle",
-                "y": "0.03",
-              },
-            ],
-            "stack": false,
-            "style": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "className": "",
-            "data": Array [
-              Object {
-                "x": "Aisle",
-                "y": "0.04",
-              },
-            ],
-            "stack": false,
-            "style": Object {},
+            "orientation": "vertical",
+            "style": Object {
+              "padding-top": "19%",
+            },
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
       ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="chartWrapper"
+        >
+          <XYPlot
+            className=""
+            height={300}
+            margin={
+              Object {
+                "left": 100,
+              }
+            }
+            width={600}
+            xType="ordinal"
+          >
+            <XAxis
+              attr="x"
+              attrAxis="y"
+              orientation="bottom"
+            />
+            <YAxis
+              attr="y"
+              attrAxis="x"
+              orientation="left"
+              tickLabelAngle={-30}
+            />
+            <VerticalGridLines
+              attr="x"
+              direction="vertical"
+            />
+            <HorizontalGridLines
+              attr="y"
+              direction="horizontal"
+            />
+            <ChartLabel
+              className="top-chart-label"
+              includeMargin={false}
+              style={
+                Object {
+                  "transform": "rotate(-90)",
+                }
+              }
+              text="Uplift (%)"
+              xPercent={-0.1}
+              yPercent={0.6}
+            />
+            <VerticalBarSeries
+              className=""
+              data={
+                Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.01",
+                  },
+                ]
+              }
+              stack={false}
+              style={Object {}}
+            />
+            <VerticalBarSeries
+              className=""
+              data={
+                Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.02",
+                  },
+                ]
+              }
+              stack={false}
+              style={Object {}}
+            />
+            <VerticalBarSeries
+              className=""
+              data={
+                Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.03",
+                  },
+                ]
+              }
+              stack={false}
+              style={Object {}}
+            />
+            <VerticalBarSeries
+              className=""
+              data={
+                Array [
+                  Object {
+                    "x": "Aisle",
+                    "y": "0.04",
+                  },
+                ]
+              }
+              stack={false}
+              style={Object {}}
+            />
+          </XYPlot>
+          <DiscreteColorLegendItem
+            className=""
+            colors={
+              Array [
+                "#12939A",
+                "#79C7E3",
+                "#1A3177",
+                "#FF9833",
+                "#EF5D28",
+              ]
+            }
+            items={
+              Array [
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Spend",
+                },
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Units",
+                },
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Visits",
+                },
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Total Customers",
+                },
+              ]
+            }
+            orientation="vertical"
+            style={
+              Object {
+                "padding-top": "19%",
+              }
+            }
+          />
+        </div>,
+        "elevation": 3,
+        "id": "topLineChart",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <XYPlot
+              className=""
+              height={300}
+              margin={
+                Object {
+                  "left": 100,
+                }
+              }
+              width={600}
+              xType="ordinal"
+            >
+              <XAxis
+                attr="x"
+                attrAxis="y"
+                orientation="bottom"
+              />
+              <YAxis
+                attr="y"
+                attrAxis="x"
+                orientation="left"
+                tickLabelAngle={-30}
+              />
+              <VerticalGridLines
+                attr="x"
+                direction="vertical"
+              />
+              <HorizontalGridLines
+                attr="y"
+                direction="horizontal"
+              />
+              <ChartLabel
+                className="top-chart-label"
+                includeMargin={false}
+                style={
+                  Object {
+                    "transform": "rotate(-90)",
+                  }
+                }
+                text="Uplift (%)"
+                xPercent={-0.1}
+                yPercent={0.6}
+              />
+              <VerticalBarSeries
+                className=""
+                data={
+                  Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.01",
+                    },
+                  ]
+                }
+                stack={false}
+                style={Object {}}
+              />
+              <VerticalBarSeries
+                className=""
+                data={
+                  Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.02",
+                    },
+                  ]
+                }
+                stack={false}
+                style={Object {}}
+              />
+              <VerticalBarSeries
+                className=""
+                data={
+                  Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.03",
+                    },
+                  ]
+                }
+                stack={false}
+                style={Object {}}
+              />
+              <VerticalBarSeries
+                className=""
+                data={
+                  Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.04",
+                    },
+                  ]
+                }
+                stack={false}
+                style={Object {}}
+              />
+            </XYPlot>,
+            <DiscreteColorLegendItem
+              className=""
+              colors={
+                Array [
+                  "#12939A",
+                  "#79C7E3",
+                  "#1A3177",
+                  "#FF9833",
+                  "#EF5D28",
+                ]
+              }
+              items={
+                Array [
+                  Object {
+                    "strokeWidth": 14,
+                    "title": "Spend",
+                  },
+                  Object {
+                    "strokeWidth": 14,
+                    "title": "Units",
+                  },
+                  Object {
+                    "strokeWidth": 14,
+                    "title": "Visits",
+                  },
+                  Object {
+                    "strokeWidth": 14,
+                    "title": "Total Customers",
+                  },
+                ]
+              }
+              orientation="vertical"
+              style={
+                Object {
+                  "padding-top": "19%",
+                }
+              }
+            />,
+          ],
+          "className": "chartWrapper",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <XAxis
+                  attr="x"
+                  attrAxis="y"
+                  orientation="bottom"
+                />,
+                <YAxis
+                  attr="y"
+                  attrAxis="x"
+                  orientation="left"
+                  tickLabelAngle={-30}
+                />,
+                <VerticalGridLines
+                  attr="x"
+                  direction="vertical"
+                />,
+                <HorizontalGridLines
+                  attr="y"
+                  direction="horizontal"
+                />,
+                <ChartLabel
+                  className="top-chart-label"
+                  includeMargin={false}
+                  style={
+                    Object {
+                      "transform": "rotate(-90)",
+                    }
+                  }
+                  text="Uplift (%)"
+                  xPercent={-0.1}
+                  yPercent={0.6}
+                />,
+                <VerticalBarSeries
+                  className=""
+                  data={
+                    Array [
+                      Object {
+                        "x": "Aisle",
+                        "y": "0.01",
+                      },
+                    ]
+                  }
+                  stack={false}
+                  style={Object {}}
+                />,
+                <VerticalBarSeries
+                  className=""
+                  data={
+                    Array [
+                      Object {
+                        "x": "Aisle",
+                        "y": "0.02",
+                      },
+                    ]
+                  }
+                  stack={false}
+                  style={Object {}}
+                />,
+                <VerticalBarSeries
+                  className=""
+                  data={
+                    Array [
+                      Object {
+                        "x": "Aisle",
+                        "y": "0.03",
+                      },
+                    ]
+                  }
+                  stack={false}
+                  style={Object {}}
+                />,
+                <VerticalBarSeries
+                  className=""
+                  data={
+                    Array [
+                      Object {
+                        "x": "Aisle",
+                        "y": "0.04",
+                      },
+                    ]
+                  }
+                  stack={false}
+                  style={Object {}}
+                />,
+              ],
+              "className": "",
+              "height": 300,
+              "margin": Object {
+                "left": 100,
+              },
+              "width": 600,
+              "xType": "ordinal",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "attr": "x",
+                  "attrAxis": "y",
+                  "orientation": "bottom",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "attr": "y",
+                  "attrAxis": "x",
+                  "orientation": "left",
+                  "tickLabelAngle": -30,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "attr": "x",
+                  "direction": "vertical",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "attr": "y",
+                  "direction": "horizontal",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "top-chart-label",
+                  "includeMargin": false,
+                  "style": Object {
+                    "transform": "rotate(-90)",
+                  },
+                  "text": "Uplift (%)",
+                  "xPercent": -0.1,
+                  "yPercent": 0.6,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "",
+                  "data": Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.01",
+                    },
+                  ],
+                  "stack": false,
+                  "style": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "",
+                  "data": Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.02",
+                    },
+                  ],
+                  "stack": false,
+                  "style": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "",
+                  "data": Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.03",
+                    },
+                  ],
+                  "stack": false,
+                  "style": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "",
+                  "data": Array [
+                    Object {
+                      "x": "Aisle",
+                      "y": "0.04",
+                    },
+                  ],
+                  "stack": false,
+                  "style": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "className": "",
+              "colors": Array [
+                "#12939A",
+                "#79C7E3",
+                "#1A3177",
+                "#FF9833",
+                "#EF5D28",
+              ],
+              "items": Array [
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Spend",
+                },
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Units",
+                },
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Visits",
+                },
+                Object {
+                  "strokeWidth": 14,
+                  "title": "Total Customers",
+                },
+              ],
+              "orientation": "vertical",
+              "style": Object {
+                "padding-top": "19%",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
       "type": [Function],
     },
   ],

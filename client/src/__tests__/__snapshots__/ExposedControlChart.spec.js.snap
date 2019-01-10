@@ -34,269 +34,10 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <XYPlot
-        className=""
-        height={300}
-        margin={
-          Object {
-            "left": 60,
-          }
-        }
-        width={350}
-        xType="time"
+      "children": <div
+        className="chartWrapper"
       >
-        <HorizontalGridLines
-          attr="y"
-          direction="horizontal"
-        />
-        <VerticalGridLines
-          attr="x"
-          direction="vertical"
-        />
-        <XAxis
-          attr="x"
-          attrAxis="y"
-          orientation="bottom"
-          tickLabelAngle={-30}
-        />
-        <YAxis
-          attr="y"
-          attrAxis="x"
-          orientation="left"
-          tickLabelAngle={-30}
-        />
-        <LineMarkSeries
-          className="exposedData"
-          curve="curveMonotoneX"
-          data={
-            Array [
-              Object {
-                "x": 2018-01-01T00:00:00.000Z,
-                "y": "444",
-              },
-            ]
-          }
-          getNull={[Function]}
-          lineStyle={Object {}}
-          markStyle={Object {}}
-          opacity={1}
-          stack={false}
-          strokeStyle="solid"
-          style={Object {}}
-        />
-        <LineMarkSeries
-          className="controlData"
-          curve="curveMonotoneX"
-          data={
-            Array [
-              Object {
-                "x": 2018-01-01T00:00:00.000Z,
-                "y": "333",
-              },
-            ]
-          }
-          getNull={[Function]}
-          lineStyle={Object {}}
-          markStyle={Object {}}
-          opacity={1}
-          stack={false}
-          strokeStyle="solid"
-          style={Object {}}
-        />
-      </XYPlot>,
-      "data-id": "exposedControlChart",
-      "elevation": 3,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": Array [
-          <HorizontalGridLines
-            attr="y"
-            direction="horizontal"
-          />,
-          <VerticalGridLines
-            attr="x"
-            direction="vertical"
-          />,
-          <XAxis
-            attr="x"
-            attrAxis="y"
-            orientation="bottom"
-            tickLabelAngle={-30}
-          />,
-          <YAxis
-            attr="y"
-            attrAxis="x"
-            orientation="left"
-            tickLabelAngle={-30}
-          />,
-          <LineMarkSeries
-            className="exposedData"
-            curve="curveMonotoneX"
-            data={
-              Array [
-                Object {
-                  "x": 2018-01-01T00:00:00.000Z,
-                  "y": "444",
-                },
-              ]
-            }
-            getNull={[Function]}
-            lineStyle={Object {}}
-            markStyle={Object {}}
-            opacity={1}
-            stack={false}
-            strokeStyle="solid"
-            style={Object {}}
-          />,
-          <LineMarkSeries
-            className="controlData"
-            curve="curveMonotoneX"
-            data={
-              Array [
-                Object {
-                  "x": 2018-01-01T00:00:00.000Z,
-                  "y": "333",
-                },
-              ]
-            }
-            getNull={[Function]}
-            lineStyle={Object {}}
-            markStyle={Object {}}
-            opacity={1}
-            stack={false}
-            strokeStyle="solid"
-            style={Object {}}
-          />,
-        ],
-        "className": "",
-        "height": 300,
-        "margin": Object {
-          "left": 60,
-        },
-        "width": 350,
-        "xType": "time",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "attr": "y",
-            "direction": "horizontal",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "attr": "x",
-            "direction": "vertical",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "attr": "x",
-            "attrAxis": "y",
-            "orientation": "bottom",
-            "tickLabelAngle": -30,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "attr": "y",
-            "attrAxis": "x",
-            "orientation": "left",
-            "tickLabelAngle": -30,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "className": "exposedData",
-            "curve": "curveMonotoneX",
-            "data": Array [
-              Object {
-                "x": 2018-01-01T00:00:00.000Z,
-                "y": "444",
-              },
-            ],
-            "getNull": [Function],
-            "lineStyle": Object {},
-            "markStyle": Object {},
-            "opacity": 1,
-            "stack": false,
-            "strokeStyle": "solid",
-            "style": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "className": "controlData",
-            "curve": "curveMonotoneX",
-            "data": Array [
-              Object {
-                "x": 2018-01-01T00:00:00.000Z,
-                "y": "333",
-              },
-            ],
-            "getNull": [Function],
-            "lineStyle": Object {},
-            "markStyle": Object {},
-            "opacity": 1,
-            "stack": false,
-            "strokeStyle": "solid",
-            "style": Object {},
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": [Function],
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <XYPlot
+        <XYPlot
           className=""
           height={300}
           margin={
@@ -365,37 +106,68 @@ ShallowWrapper {
             strokeStyle="solid"
             style={Object {}}
           />
-        </XYPlot>,
-        "data-id": "exposedControlChart",
-        "elevation": 3,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
+        </XYPlot>
+        <DiscreteColorLegendItem
+          className=""
+          colors={
+            Array [
+              "#12939A",
+              "#79C7E3",
+              "#1A3177",
+              "#FF9833",
+              "#EF5D28",
+            ]
+          }
+          items={
+            Array [
+              "Exposed",
+              "Control",
+            ]
+          }
+          orientation="vertical"
+        />
+      </div>,
+      "data-id": "exposedControlChart",
+      "elevation": 3,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <XYPlot
+            className=""
+            height={300}
+            margin={
+              Object {
+                "left": 60,
+              }
+            }
+            width={350}
+            xType="time"
+          >
             <HorizontalGridLines
               attr="y"
               direction="horizontal"
-            />,
+            />
             <VerticalGridLines
               attr="x"
               direction="vertical"
-            />,
+            />
             <XAxis
               attr="x"
               attrAxis="y"
               orientation="bottom"
               tickLabelAngle={-30}
-            />,
+            />
             <YAxis
               attr="y"
               attrAxis="x"
               orientation="left"
               tickLabelAngle={-30}
-            />,
+            />
             <LineMarkSeries
               className="exposedData"
               curve="curveMonotoneX"
@@ -414,7 +186,7 @@ ShallowWrapper {
               stack={false}
               strokeStyle="solid"
               style={Object {}}
-            />,
+            />
             <LineMarkSeries
               className="controlData"
               curve="curveMonotoneX"
@@ -433,122 +205,648 @@ ShallowWrapper {
               stack={false}
               strokeStyle="solid"
               style={Object {}}
+            />
+          </XYPlot>,
+          <DiscreteColorLegendItem
+            className=""
+            colors={
+              Array [
+                "#12939A",
+                "#79C7E3",
+                "#1A3177",
+                "#FF9833",
+                "#EF5D28",
+              ]
+            }
+            items={
+              Array [
+                "Exposed",
+                "Control",
+              ]
+            }
+            orientation="vertical"
+          />,
+        ],
+        "className": "chartWrapper",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <HorizontalGridLines
+                attr="y"
+                direction="horizontal"
+              />,
+              <VerticalGridLines
+                attr="x"
+                direction="vertical"
+              />,
+              <XAxis
+                attr="x"
+                attrAxis="y"
+                orientation="bottom"
+                tickLabelAngle={-30}
+              />,
+              <YAxis
+                attr="y"
+                attrAxis="x"
+                orientation="left"
+                tickLabelAngle={-30}
+              />,
+              <LineMarkSeries
+                className="exposedData"
+                curve="curveMonotoneX"
+                data={
+                  Array [
+                    Object {
+                      "x": 2018-01-01T00:00:00.000Z,
+                      "y": "444",
+                    },
+                  ]
+                }
+                getNull={[Function]}
+                lineStyle={Object {}}
+                markStyle={Object {}}
+                opacity={1}
+                stack={false}
+                strokeStyle="solid"
+                style={Object {}}
+              />,
+              <LineMarkSeries
+                className="controlData"
+                curve="curveMonotoneX"
+                data={
+                  Array [
+                    Object {
+                      "x": 2018-01-01T00:00:00.000Z,
+                      "y": "333",
+                    },
+                  ]
+                }
+                getNull={[Function]}
+                lineStyle={Object {}}
+                markStyle={Object {}}
+                opacity={1}
+                stack={false}
+                strokeStyle="solid"
+                style={Object {}}
+              />,
+            ],
+            "className": "",
+            "height": 300,
+            "margin": Object {
+              "left": 60,
+            },
+            "width": 350,
+            "xType": "time",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "attr": "y",
+                "direction": "horizontal",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "attr": "x",
+                "direction": "vertical",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "attr": "x",
+                "attrAxis": "y",
+                "orientation": "bottom",
+                "tickLabelAngle": -30,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "attr": "y",
+                "attrAxis": "x",
+                "orientation": "left",
+                "tickLabelAngle": -30,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "exposedData",
+                "curve": "curveMonotoneX",
+                "data": Array [
+                  Object {
+                    "x": 2018-01-01T00:00:00.000Z,
+                    "y": "444",
+                  },
+                ],
+                "getNull": [Function],
+                "lineStyle": Object {},
+                "markStyle": Object {},
+                "opacity": 1,
+                "stack": false,
+                "strokeStyle": "solid",
+                "style": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "controlData",
+                "curve": "curveMonotoneX",
+                "data": Array [
+                  Object {
+                    "x": 2018-01-01T00:00:00.000Z,
+                    "y": "333",
+                  },
+                ],
+                "getNull": [Function],
+                "lineStyle": Object {},
+                "markStyle": Object {},
+                "opacity": 1,
+                "stack": false,
+                "strokeStyle": "solid",
+                "style": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "className": "",
+            "colors": Array [
+              "#12939A",
+              "#79C7E3",
+              "#1A3177",
+              "#FF9833",
+              "#EF5D28",
+            ],
+            "items": Array [
+              "Exposed",
+              "Control",
+            ],
+            "orientation": "vertical",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="chartWrapper"
+        >
+          <XYPlot
+            className=""
+            height={300}
+            margin={
+              Object {
+                "left": 60,
+              }
+            }
+            width={350}
+            xType="time"
+          >
+            <HorizontalGridLines
+              attr="y"
+              direction="horizontal"
+            />
+            <VerticalGridLines
+              attr="x"
+              direction="vertical"
+            />
+            <XAxis
+              attr="x"
+              attrAxis="y"
+              orientation="bottom"
+              tickLabelAngle={-30}
+            />
+            <YAxis
+              attr="y"
+              attrAxis="x"
+              orientation="left"
+              tickLabelAngle={-30}
+            />
+            <LineMarkSeries
+              className="exposedData"
+              curve="curveMonotoneX"
+              data={
+                Array [
+                  Object {
+                    "x": 2018-01-01T00:00:00.000Z,
+                    "y": "444",
+                  },
+                ]
+              }
+              getNull={[Function]}
+              lineStyle={Object {}}
+              markStyle={Object {}}
+              opacity={1}
+              stack={false}
+              strokeStyle="solid"
+              style={Object {}}
+            />
+            <LineMarkSeries
+              className="controlData"
+              curve="curveMonotoneX"
+              data={
+                Array [
+                  Object {
+                    "x": 2018-01-01T00:00:00.000Z,
+                    "y": "333",
+                  },
+                ]
+              }
+              getNull={[Function]}
+              lineStyle={Object {}}
+              markStyle={Object {}}
+              opacity={1}
+              stack={false}
+              strokeStyle="solid"
+              style={Object {}}
+            />
+          </XYPlot>
+          <DiscreteColorLegendItem
+            className=""
+            colors={
+              Array [
+                "#12939A",
+                "#79C7E3",
+                "#1A3177",
+                "#FF9833",
+                "#EF5D28",
+              ]
+            }
+            items={
+              Array [
+                "Exposed",
+                "Control",
+              ]
+            }
+            orientation="vertical"
+          />
+        </div>,
+        "data-id": "exposedControlChart",
+        "elevation": 3,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <XYPlot
+              className=""
+              height={300}
+              margin={
+                Object {
+                  "left": 60,
+                }
+              }
+              width={350}
+              xType="time"
+            >
+              <HorizontalGridLines
+                attr="y"
+                direction="horizontal"
+              />
+              <VerticalGridLines
+                attr="x"
+                direction="vertical"
+              />
+              <XAxis
+                attr="x"
+                attrAxis="y"
+                orientation="bottom"
+                tickLabelAngle={-30}
+              />
+              <YAxis
+                attr="y"
+                attrAxis="x"
+                orientation="left"
+                tickLabelAngle={-30}
+              />
+              <LineMarkSeries
+                className="exposedData"
+                curve="curveMonotoneX"
+                data={
+                  Array [
+                    Object {
+                      "x": 2018-01-01T00:00:00.000Z,
+                      "y": "444",
+                    },
+                  ]
+                }
+                getNull={[Function]}
+                lineStyle={Object {}}
+                markStyle={Object {}}
+                opacity={1}
+                stack={false}
+                strokeStyle="solid"
+                style={Object {}}
+              />
+              <LineMarkSeries
+                className="controlData"
+                curve="curveMonotoneX"
+                data={
+                  Array [
+                    Object {
+                      "x": 2018-01-01T00:00:00.000Z,
+                      "y": "333",
+                    },
+                  ]
+                }
+                getNull={[Function]}
+                lineStyle={Object {}}
+                markStyle={Object {}}
+                opacity={1}
+                stack={false}
+                strokeStyle="solid"
+                style={Object {}}
+              />
+            </XYPlot>,
+            <DiscreteColorLegendItem
+              className=""
+              colors={
+                Array [
+                  "#12939A",
+                  "#79C7E3",
+                  "#1A3177",
+                  "#FF9833",
+                  "#EF5D28",
+                ]
+              }
+              items={
+                Array [
+                  "Exposed",
+                  "Control",
+                ]
+              }
+              orientation="vertical"
             />,
           ],
-          "className": "",
-          "height": 300,
-          "margin": Object {
-            "left": 60,
-          },
-          "width": 350,
-          "xType": "time",
+          "className": "chartWrapper",
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "attr": "y",
-              "direction": "horizontal",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "attr": "x",
-              "direction": "vertical",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "attr": "x",
-              "attrAxis": "y",
-              "orientation": "bottom",
-              "tickLabelAngle": -30,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "attr": "y",
-              "attrAxis": "x",
-              "orientation": "left",
-              "tickLabelAngle": -30,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "className": "exposedData",
-              "curve": "curveMonotoneX",
-              "data": Array [
-                Object {
-                  "x": 2018-01-01T00:00:00.000Z,
-                  "y": "444",
-                },
+              "children": Array [
+                <HorizontalGridLines
+                  attr="y"
+                  direction="horizontal"
+                />,
+                <VerticalGridLines
+                  attr="x"
+                  direction="vertical"
+                />,
+                <XAxis
+                  attr="x"
+                  attrAxis="y"
+                  orientation="bottom"
+                  tickLabelAngle={-30}
+                />,
+                <YAxis
+                  attr="y"
+                  attrAxis="x"
+                  orientation="left"
+                  tickLabelAngle={-30}
+                />,
+                <LineMarkSeries
+                  className="exposedData"
+                  curve="curveMonotoneX"
+                  data={
+                    Array [
+                      Object {
+                        "x": 2018-01-01T00:00:00.000Z,
+                        "y": "444",
+                      },
+                    ]
+                  }
+                  getNull={[Function]}
+                  lineStyle={Object {}}
+                  markStyle={Object {}}
+                  opacity={1}
+                  stack={false}
+                  strokeStyle="solid"
+                  style={Object {}}
+                />,
+                <LineMarkSeries
+                  className="controlData"
+                  curve="curveMonotoneX"
+                  data={
+                    Array [
+                      Object {
+                        "x": 2018-01-01T00:00:00.000Z,
+                        "y": "333",
+                      },
+                    ]
+                  }
+                  getNull={[Function]}
+                  lineStyle={Object {}}
+                  markStyle={Object {}}
+                  opacity={1}
+                  stack={false}
+                  strokeStyle="solid"
+                  style={Object {}}
+                />,
               ],
-              "getNull": [Function],
-              "lineStyle": Object {},
-              "markStyle": Object {},
-              "opacity": 1,
-              "stack": false,
-              "strokeStyle": "solid",
-              "style": Object {},
+              "className": "",
+              "height": 300,
+              "margin": Object {
+                "left": 60,
+              },
+              "width": 350,
+              "xType": "time",
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "attr": "y",
+                  "direction": "horizontal",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "attr": "x",
+                  "direction": "vertical",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "attr": "x",
+                  "attrAxis": "y",
+                  "orientation": "bottom",
+                  "tickLabelAngle": -30,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "attr": "y",
+                  "attrAxis": "x",
+                  "orientation": "left",
+                  "tickLabelAngle": -30,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "exposedData",
+                  "curve": "curveMonotoneX",
+                  "data": Array [
+                    Object {
+                      "x": 2018-01-01T00:00:00.000Z,
+                      "y": "444",
+                    },
+                  ],
+                  "getNull": [Function],
+                  "lineStyle": Object {},
+                  "markStyle": Object {},
+                  "opacity": 1,
+                  "stack": false,
+                  "strokeStyle": "solid",
+                  "style": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "controlData",
+                  "curve": "curveMonotoneX",
+                  "data": Array [
+                    Object {
+                      "x": 2018-01-01T00:00:00.000Z,
+                      "y": "333",
+                    },
+                  ],
+                  "getNull": [Function],
+                  "lineStyle": Object {},
+                  "markStyle": Object {},
+                  "opacity": 1,
+                  "stack": false,
+                  "strokeStyle": "solid",
+                  "style": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "class",
+            "nodeType": "function",
             "props": Object {
-              "className": "controlData",
-              "curve": "curveMonotoneX",
-              "data": Array [
-                Object {
-                  "x": 2018-01-01T00:00:00.000Z,
-                  "y": "333",
-                },
+              "className": "",
+              "colors": Array [
+                "#12939A",
+                "#79C7E3",
+                "#1A3177",
+                "#FF9833",
+                "#EF5D28",
               ],
-              "getNull": [Function],
-              "lineStyle": Object {},
-              "markStyle": Object {},
-              "opacity": 1,
-              "stack": false,
-              "strokeStyle": "solid",
-              "style": Object {},
+              "items": Array [
+                "Exposed",
+                "Control",
+              ],
+              "orientation": "vertical",
             },
             "ref": null,
             "rendered": null,
             "type": [Function],
           },
         ],
-        "type": [Function],
+        "type": "div",
       },
       "type": [Function],
     },

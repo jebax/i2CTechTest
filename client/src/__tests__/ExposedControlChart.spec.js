@@ -49,4 +49,8 @@ describe('exposedControl chart', () => {
     expect(secondLine.props().className).toEqual('controlData')
     expect(secondLine.props().data).toEqual(control)
   })
+
+  it('renders a DiscreteColorLegend item', () => {
+    expect(exposedControlChart.find('DiscreteColorLegendItem').length).toEqual(1)
+  })
 })

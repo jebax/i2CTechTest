@@ -71,4 +71,8 @@ describe('Top line chart', () => {
 
     expect(label.props().text).toEqual('Uplift (%)')
   })
+
+  it('renders a DiscreteColorLegend item', () => {
+    expect(topLineChart.find('DiscreteColorLegendItem').length).toEqual(1)
+  })
 })

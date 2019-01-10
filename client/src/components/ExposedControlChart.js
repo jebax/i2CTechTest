@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Paper from '@material-ui/core/Paper'
 import {
   XYPlot,
   XAxis,
   YAxis,
   VerticalGridLines,
   HorizontalGridLines,
-  LineMarkSeries
+  LineMarkSeries,
+  DiscreteColorLegend
 } from 'react-vis'
-import Paper from '@material-ui/core/Paper'
 
 const ExposedControlChart = ({ exposed, control }) => {
   return (
@@ -45,6 +46,10 @@ const ExposedControlChart = ({ exposed, control }) => {
             data={control}
           />
         </XYPlot>
+        <DiscreteColorLegend
+          orientation='vertical'
+          items={['Exposed', 'Control']}
+        />
       </div>
     </Paper>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Paper from '@material-ui/core/Paper'
 import {
   XYPlot,
   XAxis,
@@ -7,48 +8,83 @@ import {
   VerticalGridLines,
   HorizontalGridLines,
   VerticalBarSeries,
-  ChartLabel
+  ChartLabel,
+  DiscreteColorLegend,
 } from 'react-vis'
+
 
 const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
   return (
-    <XYPlot
-      height={300}
-      width={600}
-      xType={'ordinal'}
-      margin={{
-        left: 100
-      }}
+    <Paper
+      elevation={3}
+      id='topLineChart'
     >
-      <XAxis />
-      <YAxis
-        tickLabelAngle={-30}
-      />
-      <VerticalGridLines />
-      <HorizontalGridLines />
-      <ChartLabel
-        text="Uplift (%)"
-        className="top-chart-label"
-        includeMargin={false}
-        xPercent={-0.1}
-        yPercent={0.6}
-        style={{
-          transform: 'rotate(-90)',
-        }}
-      />
-      <VerticalBarSeries
-        data={spendData}
-      />
-      <VerticalBarSeries
-        data={unitsData}
-      />
-      <VerticalBarSeries
-        data={visitsData}
-      />
-      <VerticalBarSeries
-        data={totalCustsData}
-      />
-    </XYPlot>
+      <div
+        className='chartWrapper'
+      >
+        <XYPlot
+          height={300}
+          width={600}
+          xType={'ordinal'}
+          margin={{
+            left: 100
+          }}
+        >
+          <XAxis />
+          <YAxis
+            tickLabelAngle={-30}
+          />
+          <VerticalGridLines />
+          <HorizontalGridLines />
+          <ChartLabel
+            text="Uplift (%)"
+            className="top-chart-label"
+            includeMargin={false}
+            xPercent={-0.1}
+            yPercent={0.6}
+            style={{
+              transform: 'rotate(-90)',
+            }}
+          />
+          <VerticalBarSeries
+            data={spendData}
+          />
+          <VerticalBarSeries
+            data={unitsData}
+          />
+          <VerticalBarSeries
+            data={visitsData}
+          />
+          <VerticalBarSeries
+            data={totalCustsData}
+          />
+        </XYPlot>
+        <DiscreteColorLegend
+          orientation='vertical'
+          items={[
+            {
+              title: 'Spend',
+              strokeWidth: 14
+            },
+            {
+              title: 'Units',
+              strokeWidth: 14
+            },
+            {
+              title: 'Visits',
+              strokeWidth: 14
+            },
+            {
+              title: 'Total Customers',
+              strokeWidth: 14
+            }
+          ]}
+          style={{
+            'padding-top': '19%'
+          }}
+        />
+      </div>
+    </Paper>
   )
 }
 

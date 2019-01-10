@@ -8,6 +8,15 @@ body {
   display: inline-block;
 }
 
+.rv-xy-plot {
+  float: left;
+}
+
+.rv-discrete-color-legend {
+  float: left;
+  padding-top: 50%;
+}
+
 div[data-id='exposedControlChart'] {
   padding-right: 10%;
   width: 79%;
@@ -19,7 +28,7 @@ div[data-id='exposedControlChart'] {
 }
 
 div#topLineChart {
-  width: 65%;
+  width: 79%;
   padding: 3% 0% 3% 0%;
   background-color: #eeeeee;
   margin-left: 3%;
