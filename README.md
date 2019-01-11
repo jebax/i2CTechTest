@@ -8,6 +8,10 @@ The DataController in the Node API backend parses the CSV data (using [csvtojson
 
 I used Mocha/Chai for backend testing, and Jest/Enzyme for frontend testing. I adopted a TDD approach for this project.
 
+## Screenshot
+
+![screenshot](screenshot.png)
+
 ## Installation
 
 First, clone the repository.
@@ -27,3 +31,6 @@ To run the frontend client:
 - `npm start` to view the development build on port 3000
 
 The API must be running before the client can fetch any data.
+
+## To do
+The weekly offer data chart is currently broken due to an issue with `react-vis`: any data over 9'999 will break the y-axis. I felt it would be more suitable to leave the chart broken than to rewrite the final two 'exposed' values in weekly.csv.
