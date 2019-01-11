@@ -22,7 +22,7 @@ const ExposedControlChart = ({ exposed, control, title }) => {
         className='chartWrapper'
       >
         <Typography
-          variant='h5'
+          variant='h6'
           color='inherit'
         >
           Weekly Data: {title}

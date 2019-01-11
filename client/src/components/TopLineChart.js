@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Paper from '@material-ui/core/Paper'
+import Typography from '@material-ui/core/Typography'
 import {
   XYPlot,
   XAxis,
@@ -22,6 +23,12 @@ const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
       <div
         className='chartWrapper'
       >
+        <Typography
+          variant='h6'
+          color='inherit'
+        >
+          Top Line Data
+        </Typography>
         <XYPlot
           height={300}
           width={600}

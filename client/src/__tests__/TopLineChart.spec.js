@@ -75,4 +75,8 @@ describe('Top line chart', () => {
   it('renders a DiscreteColorLegend item', () => {
     expect(topLineChart.find('DiscreteColorLegendItem').length).toEqual(1)
   })
+
+  it('renders a title', () => {
+    expect(topLineChart.find('WithStyles(Typography)').length).toEqual(1)
+  })
 })

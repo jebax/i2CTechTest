@@ -40,7 +40,7 @@ ShallowWrapper {
       >
         <WithStyles(Typography)
           color="inherit"
-          variant="h5"
+          variant="h6"
         >
           Weekly Data: 
           TestTitle
@@ -147,7 +147,7 @@ ShallowWrapper {
         "children": Array [
           <WithStyles(Typography)
             color="inherit"
-            variant="h5"
+            variant="h6"
           >
             Weekly Data: 
             TestTitle
@@ -256,7 +256,7 @@ ShallowWrapper {
               "TestTitle",
             ],
             "color": "inherit",
-            "variant": "h5",
+            "variant": "h6",
           },
           "ref": null,
           "rendered": Array [
@@ -484,7 +484,7 @@ ShallowWrapper {
         >
           <WithStyles(Typography)
             color="inherit"
-            variant="h5"
+            variant="h6"
           >
             Weekly Data: 
             TestTitle
@@ -591,7 +591,7 @@ ShallowWrapper {
           "children": Array [
             <WithStyles(Typography)
               color="inherit"
-              variant="h5"
+              variant="h6"
             >
               Weekly Data: 
               TestTitle
@@ -700,7 +700,7 @@ ShallowWrapper {
                 "TestTitle",
               ],
               "color": "inherit",
-              "variant": "h5",
+              "variant": "h6",
             },
             "ref": null,
             "rendered": Array [

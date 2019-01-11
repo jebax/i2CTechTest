@@ -53,6 +53,12 @@ ShallowWrapper {
       "children": <div
         className="chartWrapper"
       >
+        <WithStyles(Typography)
+          color="inherit"
+          variant="h6"
+        >
+          Top Line Data
+        </WithStyles(Typography)>
         <XYPlot
           className=""
           height={300}
@@ -197,6 +203,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <WithStyles(Typography)
+            color="inherit"
+            variant="h6"
+          >
+            Top Line Data
+          </WithStyles(Typography)>,
           <XYPlot
             className=""
             height={300}
@@ -335,6 +347,19 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Top Line Data",
+            "color": "inherit",
+            "variant": "h6",
+          },
+          "ref": null,
+          "rendered": "Top Line Data",
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -637,6 +662,12 @@ ShallowWrapper {
         "children": <div
           className="chartWrapper"
         >
+          <WithStyles(Typography)
+            color="inherit"
+            variant="h6"
+          >
+            Top Line Data
+          </WithStyles(Typography)>
           <XYPlot
             className=""
             height={300}
@@ -781,6 +812,12 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <WithStyles(Typography)
+              color="inherit"
+              variant="h6"
+            >
+              Top Line Data
+            </WithStyles(Typography)>,
             <XYPlot
               className=""
               height={300}
@@ -919,6 +956,19 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Top Line Data",
+              "color": "inherit",
+              "variant": "h6",
+            },
+            "ref": null,
+            "rendered": "Top Line Data",
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
