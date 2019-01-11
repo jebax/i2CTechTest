@@ -9,27 +9,16 @@ body {
 }
 
 .rv-xy-plot {
-  float: left;
 }
 
 .rv-discrete-color-legend {
-  float: left;
-  padding-top: 50%;
+  padding-left: 15%;
 }
 
-div[data-id='exposedControlChart'] {
+div[data-id='chartCard'] {
   padding-right: 10%;
-  width: 79%;
-  height: 350px;
+  width: 350px;
   margin: 3%;
-  padding-left: 5%;
-  padding-top: 3%;
+  padding: 2%;
   background-color: #eeeeee;
-}
-
-div#topLineChart {
-  width: 79%;
-  padding: 3% 0% 3% 0%;
-  background-color: #eeeeee;
-  margin-left: 3%;
 }

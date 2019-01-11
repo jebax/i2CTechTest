@@ -16,7 +16,7 @@ const ExposedControlChart = ({ exposed, control, title }) => {
   return (
     <Paper
       elevation={3}
-      data-id='exposedControlChart'
+      data-id='chartCard'
     >
       <div
         className='chartWrapper'
@@ -54,7 +54,7 @@ const ExposedControlChart = ({ exposed, control, title }) => {
           />
         </XYPlot>
         <DiscreteColorLegend
-          orientation='vertical'
+          orientation='horizontal'
           items={['Exposed', 'Control']}
         />
       </div>

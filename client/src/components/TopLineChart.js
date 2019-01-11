@@ -18,7 +18,7 @@ const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
   return (
     <Paper
       elevation={3}
-      id='topLineChart'
+      data-id='chartCard'
     >
       <div
         className='chartWrapper'
@@ -31,10 +31,10 @@ const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
         </Typography>
         <XYPlot
           height={300}
-          width={600}
+          width={350}
           xType={'ordinal'}
           margin={{
-            left: 100
+            left: 60
           }}
         >
           <XAxis />
@@ -67,7 +67,7 @@ const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
           />
         </XYPlot>
         <DiscreteColorLegend
-          orientation='vertical'
+          orientation='horizontal'
           items={[
             {
               title: 'Spend',
@@ -86,9 +86,6 @@ const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
               strokeWidth: 14
             }
           ]}
-          style={{
-            'paddingTop': '19%'
-          }}
         />
       </div>
     </Paper>
