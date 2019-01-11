@@ -50,10 +50,10 @@ ShallowWrapper {
           height={300}
           margin={
             Object {
-              "left": 60,
+              "left": 90,
             }
           }
-          width={350}
+          width={400}
           xType="time"
         >
           <HorizontalGridLines
@@ -75,6 +75,18 @@ ShallowWrapper {
             attrAxis="x"
             orientation="left"
             tickLabelAngle={-30}
+          />
+          <ChartLabel
+            className="top-chart-label"
+            includeMargin={false}
+            style={
+              Object {
+                "transform": "rotate(-90)",
+              }
+            }
+            text="Customers"
+            xPercent={-0.25}
+            yPercent={0.7}
           />
           <LineMarkSeries
             className="exposedData"
@@ -132,10 +144,10 @@ ShallowWrapper {
               "Control",
             ]
           }
-          orientation="vertical"
+          orientation="horizontal"
         />
       </div>,
-      "data-id": "exposedControlChart",
+      "data-id": "chartCard",
       "elevation": 3,
     },
     "ref": null,
@@ -157,10 +169,10 @@ ShallowWrapper {
             height={300}
             margin={
               Object {
-                "left": 60,
+                "left": 90,
               }
             }
-            width={350}
+            width={400}
             xType="time"
           >
             <HorizontalGridLines
@@ -182,6 +194,18 @@ ShallowWrapper {
               attrAxis="x"
               orientation="left"
               tickLabelAngle={-30}
+            />
+            <ChartLabel
+              className="top-chart-label"
+              includeMargin={false}
+              style={
+                Object {
+                  "transform": "rotate(-90)",
+                }
+              }
+              text="Customers"
+              xPercent={-0.25}
+              yPercent={0.7}
             />
             <LineMarkSeries
               className="exposedData"
@@ -239,7 +263,7 @@ ShallowWrapper {
                 "Control",
               ]
             }
-            orientation="vertical"
+            orientation="horizontal"
           />,
         ],
         "className": "chartWrapper",
@@ -291,6 +315,18 @@ ShallowWrapper {
                 orientation="left"
                 tickLabelAngle={-30}
               />,
+              <ChartLabel
+                className="top-chart-label"
+                includeMargin={false}
+                style={
+                  Object {
+                    "transform": "rotate(-90)",
+                  }
+                }
+                text="Customers"
+                xPercent={-0.25}
+                yPercent={0.7}
+              />,
               <LineMarkSeries
                 className="exposedData"
                 curve="curveMonotoneX"
@@ -333,9 +369,9 @@ ShallowWrapper {
             "className": "",
             "height": 300,
             "margin": Object {
-              "left": 60,
+              "left": 90,
             },
-            "width": 350,
+            "width": 400,
             "xType": "time",
           },
           "ref": null,
@@ -387,6 +423,24 @@ ShallowWrapper {
                 "attrAxis": "x",
                 "orientation": "left",
                 "tickLabelAngle": -30,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "className": "top-chart-label",
+                "includeMargin": false,
+                "style": Object {
+                  "transform": "rotate(-90)",
+                },
+                "text": "Customers",
+                "xPercent": -0.25,
+                "yPercent": 0.7,
               },
               "ref": null,
               "rendered": null,
@@ -462,7 +516,7 @@ ShallowWrapper {
               "Exposed",
               "Control",
             ],
-            "orientation": "vertical",
+            "orientation": "horizontal",
           },
           "ref": null,
           "rendered": null,
@@ -494,10 +548,10 @@ ShallowWrapper {
             height={300}
             margin={
               Object {
-                "left": 60,
+                "left": 90,
               }
             }
-            width={350}
+            width={400}
             xType="time"
           >
             <HorizontalGridLines
@@ -519,6 +573,18 @@ ShallowWrapper {
               attrAxis="x"
               orientation="left"
               tickLabelAngle={-30}
+            />
+            <ChartLabel
+              className="top-chart-label"
+              includeMargin={false}
+              style={
+                Object {
+                  "transform": "rotate(-90)",
+                }
+              }
+              text="Customers"
+              xPercent={-0.25}
+              yPercent={0.7}
             />
             <LineMarkSeries
               className="exposedData"
@@ -576,10 +642,10 @@ ShallowWrapper {
                 "Control",
               ]
             }
-            orientation="vertical"
+            orientation="horizontal"
           />
         </div>,
-        "data-id": "exposedControlChart",
+        "data-id": "chartCard",
         "elevation": 3,
       },
       "ref": null,
@@ -601,10 +667,10 @@ ShallowWrapper {
               height={300}
               margin={
                 Object {
-                  "left": 60,
+                  "left": 90,
                 }
               }
-              width={350}
+              width={400}
               xType="time"
             >
               <HorizontalGridLines
@@ -626,6 +692,18 @@ ShallowWrapper {
                 attrAxis="x"
                 orientation="left"
                 tickLabelAngle={-30}
+              />
+              <ChartLabel
+                className="top-chart-label"
+                includeMargin={false}
+                style={
+                  Object {
+                    "transform": "rotate(-90)",
+                  }
+                }
+                text="Customers"
+                xPercent={-0.25}
+                yPercent={0.7}
               />
               <LineMarkSeries
                 className="exposedData"
@@ -683,7 +761,7 @@ ShallowWrapper {
                   "Control",
                 ]
               }
-              orientation="vertical"
+              orientation="horizontal"
             />,
           ],
           "className": "chartWrapper",
@@ -735,6 +813,18 @@ ShallowWrapper {
                   orientation="left"
                   tickLabelAngle={-30}
                 />,
+                <ChartLabel
+                  className="top-chart-label"
+                  includeMargin={false}
+                  style={
+                    Object {
+                      "transform": "rotate(-90)",
+                    }
+                  }
+                  text="Customers"
+                  xPercent={-0.25}
+                  yPercent={0.7}
+                />,
                 <LineMarkSeries
                   className="exposedData"
                   curve="curveMonotoneX"
@@ -777,9 +867,9 @@ ShallowWrapper {
               "className": "",
               "height": 300,
               "margin": Object {
-                "left": 60,
+                "left": 90,
               },
-              "width": 350,
+              "width": 400,
               "xType": "time",
             },
             "ref": null,
@@ -831,6 +921,24 @@ ShallowWrapper {
                   "attrAxis": "x",
                   "orientation": "left",
                   "tickLabelAngle": -30,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "className": "top-chart-label",
+                  "includeMargin": false,
+                  "style": Object {
+                    "transform": "rotate(-90)",
+                  },
+                  "text": "Customers",
+                  "xPercent": -0.25,
+                  "yPercent": 0.7,
                 },
                 "ref": null,
                 "rendered": null,
@@ -906,7 +1014,7 @@ ShallowWrapper {
                 "Exposed",
                 "Control",
               ],
-              "orientation": "vertical",
+              "orientation": "horizontal",
             },
             "ref": null,
             "rendered": null,

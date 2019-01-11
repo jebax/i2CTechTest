@@ -64,10 +64,10 @@ ShallowWrapper {
           height={300}
           margin={
             Object {
-              "left": 100,
+              "left": 90,
             }
           }
-          width={600}
+          width={400}
           xType="ordinal"
         >
           <XAxis
@@ -98,8 +98,8 @@ ShallowWrapper {
               }
             }
             text="Uplift (%)"
-            xPercent={-0.1}
-            yPercent={0.6}
+            xPercent={-0.15}
+            yPercent={0.7}
           />
           <VerticalBarSeries
             className=""
@@ -185,16 +185,11 @@ ShallowWrapper {
               },
             ]
           }
-          orientation="vertical"
-          style={
-            Object {
-              "paddingTop": "19%",
-            }
-          }
+          orientation="horizontal"
         />
       </div>,
+      "data-id": "chartCard",
       "elevation": 3,
-      "id": "topLineChart",
     },
     "ref": null,
     "rendered": Object {
@@ -214,10 +209,10 @@ ShallowWrapper {
             height={300}
             margin={
               Object {
-                "left": 100,
+                "left": 90,
               }
             }
-            width={600}
+            width={400}
             xType="ordinal"
           >
             <XAxis
@@ -248,8 +243,8 @@ ShallowWrapper {
                 }
               }
               text="Uplift (%)"
-              xPercent={-0.1}
-              yPercent={0.6}
+              xPercent={-0.15}
+              yPercent={0.7}
             />
             <VerticalBarSeries
               className=""
@@ -335,12 +330,7 @@ ShallowWrapper {
                 },
               ]
             }
-            orientation="vertical"
-            style={
-              Object {
-                "paddingTop": "19%",
-              }
-            }
+            orientation="horizontal"
           />,
         ],
         "className": "chartWrapper",
@@ -394,8 +384,8 @@ ShallowWrapper {
                   }
                 }
                 text="Uplift (%)"
-                xPercent={-0.1}
-                yPercent={0.6}
+                xPercent={-0.15}
+                yPercent={0.7}
               />,
               <VerticalBarSeries
                 className=""
@@ -453,9 +443,9 @@ ShallowWrapper {
             "className": "",
             "height": 300,
             "margin": Object {
-              "left": 100,
+              "left": 90,
             },
-            "width": 600,
+            "width": 400,
             "xType": "ordinal",
           },
           "ref": null,
@@ -522,8 +512,8 @@ ShallowWrapper {
                   "transform": "rotate(-90)",
                 },
                 "text": "Uplift (%)",
-                "xPercent": -0.1,
-                "yPercent": 0.6,
+                "xPercent": -0.15,
+                "yPercent": 0.7,
               },
               "ref": null,
               "rendered": null,
@@ -639,10 +629,7 @@ ShallowWrapper {
                 "title": "Total Customers",
               },
             ],
-            "orientation": "vertical",
-            "style": Object {
-              "paddingTop": "19%",
-            },
+            "orientation": "horizontal",
           },
           "ref": null,
           "rendered": null,
@@ -673,10 +660,10 @@ ShallowWrapper {
             height={300}
             margin={
               Object {
-                "left": 100,
+                "left": 90,
               }
             }
-            width={600}
+            width={400}
             xType="ordinal"
           >
             <XAxis
@@ -707,8 +694,8 @@ ShallowWrapper {
                 }
               }
               text="Uplift (%)"
-              xPercent={-0.1}
-              yPercent={0.6}
+              xPercent={-0.15}
+              yPercent={0.7}
             />
             <VerticalBarSeries
               className=""
@@ -794,16 +781,11 @@ ShallowWrapper {
                 },
               ]
             }
-            orientation="vertical"
-            style={
-              Object {
-                "paddingTop": "19%",
-              }
-            }
+            orientation="horizontal"
           />
         </div>,
+        "data-id": "chartCard",
         "elevation": 3,
-        "id": "topLineChart",
       },
       "ref": null,
       "rendered": Object {
@@ -823,10 +805,10 @@ ShallowWrapper {
               height={300}
               margin={
                 Object {
-                  "left": 100,
+                  "left": 90,
                 }
               }
-              width={600}
+              width={400}
               xType="ordinal"
             >
               <XAxis
@@ -857,8 +839,8 @@ ShallowWrapper {
                   }
                 }
                 text="Uplift (%)"
-                xPercent={-0.1}
-                yPercent={0.6}
+                xPercent={-0.15}
+                yPercent={0.7}
               />
               <VerticalBarSeries
                 className=""
@@ -944,12 +926,7 @@ ShallowWrapper {
                   },
                 ]
               }
-              orientation="vertical"
-              style={
-                Object {
-                  "paddingTop": "19%",
-                }
-              }
+              orientation="horizontal"
             />,
           ],
           "className": "chartWrapper",
@@ -1003,8 +980,8 @@ ShallowWrapper {
                     }
                   }
                   text="Uplift (%)"
-                  xPercent={-0.1}
-                  yPercent={0.6}
+                  xPercent={-0.15}
+                  yPercent={0.7}
                 />,
                 <VerticalBarSeries
                   className=""
@@ -1062,9 +1039,9 @@ ShallowWrapper {
               "className": "",
               "height": 300,
               "margin": Object {
-                "left": 100,
+                "left": 90,
               },
-              "width": 600,
+              "width": 400,
               "xType": "ordinal",
             },
             "ref": null,
@@ -1131,8 +1108,8 @@ ShallowWrapper {
                     "transform": "rotate(-90)",
                   },
                   "text": "Uplift (%)",
-                  "xPercent": -0.1,
-                  "yPercent": 0.6,
+                  "xPercent": -0.15,
+                  "yPercent": 0.7,
                 },
                 "ref": null,
                 "rendered": null,
@@ -1248,10 +1225,7 @@ ShallowWrapper {
                   "title": "Total Customers",
                 },
               ],
-              "orientation": "vertical",
-              "style": Object {
-                "paddingTop": "19%",
-              },
+              "orientation": "horizontal",
             },
             "ref": null,
             "rendered": null,

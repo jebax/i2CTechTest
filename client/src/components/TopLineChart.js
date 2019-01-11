@@ -31,10 +31,10 @@ const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
         </Typography>
         <XYPlot
           height={300}
-          width={350}
+          width={400}
           xType={'ordinal'}
           margin={{
-            left: 60
+            left: 90
           }}
         >
           <XAxis />
@@ -47,8 +47,8 @@ const TopLineChart = ({ spendData, unitsData, visitsData, totalCustsData }) => {
             text="Uplift (%)"
             className="top-chart-label"
             includeMargin={false}
-            xPercent={-0.1}
-            yPercent={0.6}
+            xPercent={-0.15}
+            yPercent={0.7}
             style={{
               transform: 'rotate(-90)',
             }}

@@ -8,6 +8,7 @@ import {
   YAxis,
   VerticalGridLines,
   HorizontalGridLines,
+  ChartLabel,
   LineMarkSeries,
   DiscreteColorLegend
 } from 'react-vis'
@@ -29,10 +30,10 @@ const ExposedControlChart = ({ exposed, control, title }) => {
         </Typography>
         <XYPlot
           height={300}
-          width={350}
+          width={400}
           xType={'time'}
           margin={{
-            left: 60
+            left: 90
           }}
         >
           <HorizontalGridLines />
@@ -41,6 +42,16 @@ const ExposedControlChart = ({ exposed, control, title }) => {
             tickLabelAngle={-30}/>
           <YAxis
             tickLabelAngle={-30}
+          />
+          <ChartLabel
+            text="Customers"
+            className="top-chart-label"
+            includeMargin={false}
+            xPercent={-0.25}
+            yPercent={0.7}
+            style={{
+              transform: 'rotate(-90)',
+            }}
           />
           <LineMarkSeries
             className={'exposedData'}
