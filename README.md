@@ -10,7 +10,7 @@ I used Mocha/Chai for backend testing, and Jest/Enzyme for frontend testing. I a
 
 ## Screenshot
 
-![screenshot](./client/public/screenshot.png)
+![screenshot](./screenshot.png)
 
 ## Installation
 
