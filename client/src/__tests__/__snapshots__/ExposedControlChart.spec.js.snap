@@ -20,6 +20,7 @@ ShallowWrapper {
         },
       ]
     }
+    title="TestTitle"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -37,6 +38,13 @@ ShallowWrapper {
       "children": <div
         className="chartWrapper"
       >
+        <WithStyles(Typography)
+          color="inherit"
+          variant="h5"
+        >
+          Weekly Data: 
+          TestTitle
+        </WithStyles(Typography)>
         <XYPlot
           className=""
           height={300}
@@ -137,6 +145,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <WithStyles(Typography)
+            color="inherit"
+            variant="h5"
+          >
+            Weekly Data: 
+            TestTitle
+          </WithStyles(Typography)>,
           <XYPlot
             className=""
             height={300}
@@ -231,6 +246,25 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "Weekly Data: ",
+              "TestTitle",
+            ],
+            "color": "inherit",
+            "variant": "h5",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Weekly Data: ",
+            "TestTitle",
+          ],
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -448,6 +482,13 @@ ShallowWrapper {
         "children": <div
           className="chartWrapper"
         >
+          <WithStyles(Typography)
+            color="inherit"
+            variant="h5"
+          >
+            Weekly Data: 
+            TestTitle
+          </WithStyles(Typography)>
           <XYPlot
             className=""
             height={300}
@@ -548,6 +589,13 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <WithStyles(Typography)
+              color="inherit"
+              variant="h5"
+            >
+              Weekly Data: 
+              TestTitle
+            </WithStyles(Typography)>,
             <XYPlot
               className=""
               height={300}
@@ -642,6 +690,25 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "Weekly Data: ",
+                "TestTitle",
+              ],
+              "color": "inherit",
+              "variant": "h5",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Weekly Data: ",
+              "TestTitle",
+            ],
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,

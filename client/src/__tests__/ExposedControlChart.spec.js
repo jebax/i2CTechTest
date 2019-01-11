@@ -1,5 +1,5 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { shallow, mount } from 'enzyme'
 import ExposedControlChart from '../components/ExposedControlChart'
 
 describe('exposedControl chart', () => {
@@ -15,6 +15,7 @@ describe('exposedControl chart', () => {
       <ExposedControlChart
         exposed={exposed}
         control={control}
+        title='TestTitle'
       />
     )
   })
@@ -52,5 +53,19 @@ describe('exposedControl chart', () => {
 
   it('renders a DiscreteColorLegend item', () => {
     expect(exposedControlChart.find('DiscreteColorLegendItem').length).toEqual(1)
+  })
+
+  it('should display its title', () => {
+    const mountedChart = mount(
+      <ExposedControlChart
+        exposed={exposed}
+        control={control}
+        title='TestTitle'
+      />
+    )
+    const title = mountedChart.find('WithStyles(Typography)')
+    expect(title.text()).toEqual(
+      `Weekly Data: ${mountedChart.props().title}`
+    )
   })
 })

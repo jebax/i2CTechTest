@@ -28,7 +28,7 @@ ShallowWrapper {
             <WithStyles(Toolbar)>
               <WithStyles(Typography)
                 color="inherit"
-                variant="h6"
+                variant="h5"
               >
                 i2C Dashboard
               </WithStyles(Typography)>
@@ -53,7 +53,7 @@ ShallowWrapper {
             <WithStyles(Toolbar)>
               <WithStyles(Typography)
                 color="inherit"
-                variant="h6"
+                variant="h5"
               >
                 i2C Dashboard
               </WithStyles(Typography)>
@@ -70,7 +70,7 @@ ShallowWrapper {
             "children": <WithStyles(Toolbar)>
               <WithStyles(Typography)
                 color="inherit"
-                variant="h6"
+                variant="h5"
               >
                 i2C Dashboard
               </WithStyles(Typography)>
@@ -86,7 +86,7 @@ ShallowWrapper {
             "props": Object {
               "children": <WithStyles(Typography)
                 color="inherit"
-                variant="h6"
+                variant="h5"
               >
                 i2C Dashboard
               </WithStyles(Typography)>,
@@ -99,7 +99,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "i2C Dashboard",
                 "color": "inherit",
-                "variant": "h6",
+                "variant": "h5",
               },
               "ref": null,
               "rendered": "i2C Dashboard",
@@ -140,7 +140,7 @@ ShallowWrapper {
               <WithStyles(Toolbar)>
                 <WithStyles(Typography)
                   color="inherit"
-                  variant="h6"
+                  variant="h5"
                 >
                   i2C Dashboard
                 </WithStyles(Typography)>
@@ -165,7 +165,7 @@ ShallowWrapper {
               <WithStyles(Toolbar)>
                 <WithStyles(Typography)
                   color="inherit"
-                  variant="h6"
+                  variant="h5"
                 >
                   i2C Dashboard
                 </WithStyles(Typography)>
@@ -182,7 +182,7 @@ ShallowWrapper {
               "children": <WithStyles(Toolbar)>
                 <WithStyles(Typography)
                   color="inherit"
-                  variant="h6"
+                  variant="h5"
                 >
                   i2C Dashboard
                 </WithStyles(Typography)>
@@ -198,7 +198,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <WithStyles(Typography)
                   color="inherit"
-                  variant="h6"
+                  variant="h5"
                 >
                   i2C Dashboard
                 </WithStyles(Typography)>,
@@ -211,7 +211,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": "i2C Dashboard",
                   "color": "inherit",
-                  "variant": "h6",
+                  "variant": "h5",
                 },
                 "ref": null,
                 "rendered": "i2C Dashboard",

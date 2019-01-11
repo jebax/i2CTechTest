@@ -18,7 +18,7 @@ const App = () => {
         >
           <Toolbar>
             <Typography
-              variant="h6"
+              variant="h5"
               color="inherit"
             >
               i2C Dashboard

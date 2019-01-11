@@ -72,14 +72,17 @@ export default class WeeklyCharts extends Component {
         <ExposedControlChart
           exposed={this.state.aisleExposed}
           control={this.state.aisleControl}
+          title='Aisle'
         />
         <ExposedControlChart
           exposed={this.state.brandExposed}
           control={this.state.brandControl}
+          title='Brand'
         />
         <ExposedControlChart
           exposed={this.state.offerExposed}
           control={this.state.offerControl}
+          title='Offer'
         />
       </div>
     )

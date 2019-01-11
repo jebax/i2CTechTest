@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Paper from '@material-ui/core/Paper'
+import Typography from '@material-ui/core/Typography'
 import {
   XYPlot,
   XAxis,
@@ -11,7 +12,7 @@ import {
   DiscreteColorLegend
 } from 'react-vis'
 
-const ExposedControlChart = ({ exposed, control }) => {
+const ExposedControlChart = ({ exposed, control, title }) => {
   return (
     <Paper
       elevation={3}
@@ -20,6 +21,12 @@ const ExposedControlChart = ({ exposed, control }) => {
       <div
         className='chartWrapper'
       >
+        <Typography
+          variant='h5'
+          color='inherit'
+        >
+          Weekly Data: {title}
+        </Typography>
         <XYPlot
           height={300}
           width={350}
@@ -57,7 +64,8 @@ const ExposedControlChart = ({ exposed, control }) => {
 
 ExposedControlChart.propTypes = {
   exposed: PropTypes.array.isRequired,
-  control: PropTypes.array.isRequired
+  control: PropTypes.array.isRequired,
+  title: PropTypes.string.isRequired
 }
 
 export default ExposedControlChart
